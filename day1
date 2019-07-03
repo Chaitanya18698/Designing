@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="style.css"></head>
+    <body>
+    <header>
+            <span class="headerbtns">
+            <span><button>HTML</button>
+            <a href="https://www.w3schools.com/html/default.asp">HTML REFERENCE</a>
+            </span>
+            <button>CSS</button>
+            <button>JAVASCRIPT</button>
+            <button>MYSQL</button>
+            <button>BOOTSTRAP</button>
+            <button>ANGULAR JS</button>
+            <button>NODE JS</button>
+            </span>
+    </header>
+   
+            <div class="sidebar">
+                <a href="About" >About</a>
+                <a href="Contact Us" >Contact Us</a>
+                <a href="Careers" >Careers</a>
+                <a href="Address" >Address</a>
+                <div class="sidebarbtn"><button class="menubtn">MENU</button>
+                <div class="child">
+                    <a href="Abt">About </a>
+                    <a href="Cont">Contact us</a>
+                    <a href="Carr">Careers</a>
+                    <a href="Addr">Address</a>
+                </div>
+                </div>
+            </div>
+         <div id="body">
+             <p>
+                    Definition - What does Web Development mean?
+                    Web development broadly refers to the tasks associated with developing websites for hosting via intranet or internet. The web development process includes web design, web content development, client-side/server-side scripting and network security configuration, among other tasks.
+                    
+                    Web development is also known as website development.</p>
+         </div>
+         <footer>Footer</footer>    
+    </body>
+    
+</html>
+
+
+//css//
+header{
+    border: 1px solid black;
+    background-color:rgb(150, 119, 192);
+    height: 45px;
+    border: 0px;
+    /* padding:25px 50px 25px 50px; */
+}
+header button{
+    padding: 10px 20px 10px 20px;
+    background-color:rgb(150, 119, 192);
+    text-decoration: none;
+    /* outline: none; */
+    /* border:none; */
+    display:inline-block;
+    margin-left:100px;
+    /* border-radius: 20%; */
+    padding-top: 20px;
+}
+header button:hover{
+    color:white;
+
+    background-color: black;
+    transition-property:inherit;
+    transition-duration:0.5s; 
+}
+#body{
+    color: black;
+    margin-left: 18%;
+ }
+ .sidebar a{
+     
+     color:black;
+     text-decoration: none;
+     padding: 8px 10px 8px 10px;
+     display: block;
+     padding-left:45px;  
+     padding-top:45px;  
+     
+    }
+.sidebar a:hover{
+    color:rgb(12, 240, 12);
+    font-size: 20px;
+        
+    }
+.sidebar{
+    color: black;
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    background-color:pink;
+}
+
+.sidebarbtn{
+    border: 0px;
+    margin-left: 35px;
+}
+.child{
+    display: none;
+}
+.sidebarbtn:hover .child{
+    display: block;
+}
+.child a{
+    padding: 16px 12px;
+    display:block;
+}
+footer{
+    border:  1px solid black;
+    position:fixed;
+    bottom:0px;
+    height: 50px;
+    width: 100%;
+    background-color:rgb(122, 85, 182);
+    border: 0px;
+}
+.menubtn{
+    border-radius:0px;
+    background-color:rgb(85, 128, 221)   
+}
+body{
+    background-color:rgb(157, 176, 192);
+}
+.btn{
+    height:50px;
+}
+header .btn:hover{
+    background-color:rgb(104, 164, 204);
+    border:0px;
+}
+.headerbtns a{
+    color: aqua;
+    display: none;
+}
+.headerbtns span a:hover{
+    color: red;
+    /* display: none; */
+}
