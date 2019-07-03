@@ -1,0 +1,208 @@
+//html//
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="w3.css">
+    <body>
+    <span class='span1'>w3schools.com</span>
+    <span class='span2'>THE WORLD'S LARGEST WEB DEVELOPER SITE</span>
+    <header>
+        <button>TUTORIALS</button>
+        <button>REFERENCES</button>
+        <button>EXAMPLES</button>
+        <button>EXERCISES</button>
+    </header>
+   
+    <div class="sidebar"><br>
+        
+        <p>HTML and CSS</p>
+        <a href="https://www.w3schools.com/html/default.asp">LEARN HTML</a>
+        <a href="https://www.w3schools.com/css/default.asp">LEARN CSS</a>
+        <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">LEARN BOOTSTRAP</a>
+        <a href="https://www.w3schools.com/w3css/default.asp">LEARN W3CSS</a>
+        <a href="https://www.w3schools.com/icons/default.asp">LEARN ICONS</a>
+        <a href="https://www.w3schools.com/colors/default.asp">LEARN COLORS</a>
+       <P>JAVASCRIPT</P>
+        <a href="https://www.w3schools.com/js/default.asp">LEARN JAVASCRIPT</a>
+        <a href="https://www.w3schools.com/jquery/default.asp">LEARN JQUIRY</a>
+        <a href="https://www.w3schools.com/react/default.asp">LEARN REACT</a>
+        <a href="https://www.w3schools.com/angular/default.asp">LEARN ANGULAR JS</a>
+        <a href="https://www.w3schools.com/js/js_json_intro.asp">LEARN JSON</a>
+        <a href="https://www.w3schools.com/js/js_ajax_intro.asp">LEARN AJAX</a>
+        </div> 
+       
+        <div id="centerbody">HTML 
+            <p>The language for building web pages</p>
+            <button><a href="https://www.w3schools.com/html/default.asp">LEARN HTML</a></button>
+            <button><a href="https://www.w3schools.com/html/default.asp">HTML REFERENCE</a></button>     
+        </div><br><br>
+        <div class="sidebox">
+            <span style="font-size:130%">HTML Example:</span>
+            <div class="code">
+                <span class="tagname">
+                <span class="tags"><</span>
+                !DOCTYPE
+                <span style="color: red">html</span>
+                <span class="tags">></span><br>
+                <span class="tags"><</span>
+                html
+                <span class="tags">></span><br>
+                <span class="tags"><</span>
+                title
+                <span class="tags">></span>
+                </span>
+                <span style="font-size:90%">HTML Tutorial</span>
+                <span class="tagname">
+                <span class="tags"><</span>
+                /title
+                <span class="tags">></span><br>
+                <span class="tags"><</span>
+                body
+                <span class="tags">></span><br><br>
+                <span class="tags"><</span>
+                h1
+                <span class="tags">></span>
+                </span>
+                <span style="font-size:90%">This is a heading</span>
+                <span class="tagname">
+                <span class="tags"><</span>
+                /h1
+                <span class="tags">></span><br>
+                <span class="tags"><</span>
+                p
+                <span class="tags">></span>
+                </span>
+                <span style="font-size:90%">This is a paragraph</span>
+                <span class="tagname">
+                <span class="tags"><</span>
+                /p
+                <span class="tags">></span><br><br>
+                <span class="tags"><</span>
+                /body
+                <span class="tags">></span><br>
+                <span class="tags"><</span>
+                /html
+                <span class="tags">></span>
+                </span>
+            </span>
+
+        </div> <br>
+        <button class="btn"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default">Try it Yourself >>></a></button>
+    </div>
+</body>
+</html>
+
+//css//
+
+.span1{
+    font-size: 350%;
+}
+.span2{
+    font-size:120%;
+    margin-left: 35%;
+    letter-spacing:2px; 
+    font-family:"Segoe UI",Arial,sans-serif;
+}
+header{
+    background-color: #4CAF50;
+    width:auto;
+    height: 50px;
+}
+header button{
+    color:white;
+    background-color: #4CAF50;
+    font-size: 100%;
+    letter-spacing: 5px;
+    height: 50px;
+    border:none;
+    float:left;
+    padding:5px 20px 5px 20px;
+    /* margin-left:50px;  */
+    /* transform: rotate(-4deg); */
+      
+}
+header button:hover{
+    background-color: white;
+    color: black;
+}
+/* div > p{
+    font-size: 200%;
+    color: #4CAF50;
+}*/
+#centerbody {
+    font-size: 430%;
+    margin-left: 20%;
+    text-align: center;
+    padding-top:10px;
+    font-family: sans-serif;
+    color: #555555;
+    position:fixed;
+    width: 40%;
+}
+#centerbody p{
+    font-size: 35%;
+}
+#centerbody button a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 120%;
+}
+#centerbody button{
+    background-color: #555555;
+    border: none;
+    padding: 16px 16px 16px 16px;
+}
+.sidebar{
+    height: 700px;
+    width: 17%;
+    position: fixed;
+    box-shadow: 1px 1px #888888;
+    /* box-sizing: inherit; */
+    /* margin-bottom: 200%; */
+
+}
+.sidebar p{
+    font-family: sans-serif;
+    font-size: 115%;
+}
+.sidebar > a{
+    text-decoration: none;
+    font-family: verdana,sans-serif;
+    display: block;
+    color: black;
+    padding: 8px 10px 8px 10px;
+}
+.sidebox{
+    margin-left: 60%;
+    width: 30%;
+    font-family:  Consolas,"courier new";
+    font-size: 120%;
+    background-color:  #f1f1f1;
+    height:400px;
+    padding: 20px 20px 20px 20px;
+}
+.tagname{
+    color: brown;
+    font-size: 80%;
+}
+.tags{
+    color:mediumblue;
+    font-size: 80%;
+}
+.code{
+    margin-top:50px;
+    background-color: white;
+    width:80%;   
+    border-left:4px solid #4CAF50;
+}
+.btn{
+    border:none;
+    background-color: #4CAF50;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 80%;
+   
+    padding:10px 20px 10px 20px;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
