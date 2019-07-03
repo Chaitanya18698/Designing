@@ -1,0 +1,30 @@
+.wrapper{
+    background-color: tomato;
+}
+header .navgtn-bar ul{
+    background-color: rgb(62, 247, 253);
+    width: 100%;
+    height: 24px;
+    padding:18px 0px 14px 4px;
+    box-shadow: 1px 1px 16px #4caf50;
+    position: fixed;
+}
+header .navgtn-bar ul li{ 
+    letter-spacing: 5px;
+    position: relative;
+    font-size: 18px;
+    color: rgb(245, 0, 0);
+    list-style-type: none;
+    display:inline;
+    padding: 18px 20px 18px 20px;
+}
+header .navgtn-bar ul li:hover{
+    background-color: white;
+    color: black;
+}
+header .navgtn-bar ul li div li{
+    list-style-type: disc;
+
+}
+
+
