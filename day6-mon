@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="day6.css">
+    <body>
+    <header>
+        <div class="company-name">
+            <p>Company name</p>
+        <div class="nav-beside-name">
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Enterprise</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Pricing</a></li>
+                <button><a href="#">Sign up</a></button>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h1 class="page-title">Pricing</h1>
+            <p>Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+        </div>
+        <div class="boxes">
+        <div class="box1">
+            <table>
+                <tr><th>Free</th></tr>
+                <tr>
+                    <td><strong>$0 </strong><span> / mo</span></td>
+                </tr>
+                <tr><td> </td></tr>
+                <tr><td>10 users included</td></tr>
+                <tr><td>2 GB of storage</td></tr>
+                <tr><td>Email support</td></tr>
+                <tr><td>Help center access</td></tr>
+                <tr><td><br><button><a href="#">Sign up for free</a></button></td></tr>
+            </table>
+        </div>
+        <div class="box2">
+                <table>
+                        <tr><th>Pro</strong></th></tr>
+                        <tr>
+                            <td><strong>$15 </strong><span> /mo</span></td>
+                        </tr>
+                        <tr><td> </td></tr>
+                        <tr><td>20 users included</td></tr>
+                        <tr><td>10 GB of storage</td></tr>
+                        <tr><td>Priority email support</td></tr>
+                        <tr><td>Help center access</td></tr>
+                        <tr><td><br><button><a href="#">Get started</a></button></td></tr>
+                    </table>
+        </div>
+        <div class="box3">
+                <table>
+                        <tr><th>Enterprise</th></tr>
+                        <tr>
+                            <td><strong>$29 </strong><span> /mo</span></td>
+                        </tr>
+                        <tr><td> </td></tr>
+                        <tr><td>30 users included</td></tr>
+                        <tr><td>15 GB of storage</td></tr>
+                        <tr><td>Phone and email support</td></tr>
+                        <tr><td>Help center access</td></tr>
+                        <tr><td><br><button><a href="#">Contact us</a></button></td></tr>
+                    </table>
+        </div>
+    </div>
+</div></body>
+<hr>
+<footer>
+    <div class="icon">
+        <span>	&#169;2017-2019</span>
+        <div class="header-lists">
+            <ul>
+                <li><strong>Features</strong></li>
+                <li><a href="#">Cool stuff</a></li>
+                <li><a href="#">Random feature</a></li>
+                <li><a href="#">Team feature</a></li>
+                <li><a href="#">Stuff for developers</a></li>
+                <li><a href="#">Another one</a></li>
+                <li><a href="#">Last time</a></li>
+            </ul>
+            <ul>
+                    <li><strong>Resources</strong></li>
+                    <li><a href="#">Resource</a></li>
+                    <li><a href="#">Resource name</a></li>
+                    <li><a href="#">Another resource</a></li>
+                    <li><a href="#">Final resource</a></li>
+                </ul>
+                <ul>
+                        <li><strong>About</strong></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+        </div>
+    </div>
+</footer>
+
+</html>
+
+//css//
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+body header{
+    box-shadow: 1px 1px 4px rgb(219, 212, 212);
+    padding: 15px;
+}
+body header .company-name{
+    position: relative;
+    float: left;
+}
+body header .company-name p{
+    margin: 0px;
+    font-size: 20px;
+}
+body header .nav-beside-name{
+    /* margin-left: 800px; */
+    float: right;
+}
+body header .nav-beside-name ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+body header .nav-beside-name ul li a:hover a{
+
+}
+body header .nav-beside-name ul button{
+    background-color: white;
+    border: 0px;
+}
+body header .nav-beside-name ul button a{
+    text-decoration: none;
+    background-color: white;
+    border: 1.2px solid #007bff;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 8px;
+    color: #007bff;
+}
+body header .nav-beside-name ul button:hover a{
+    background-color: #007bff;
+    color: white;
+}
+body header .nav-beside-name ul li{
+    /* list-style: none; */
+    display: inline;
+    /* padding: 10px; */
+}
+body header:after{
+    clear: both;
+    content: "";
+    display: table;
+}
+body header .nav-beside-name ul li a{
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+}
+body header .nav-beside-name ul li a:hover{
+    text-decoration-line: underline;
+}
+body .container{
+   max-width: 960px;
+    margin: auto;
+}
+body .container .content{
+    /* max-width: 700px; */
+    font-weight: lighter; 
+    /* padding-left: 300px; */
+}
+.page-title{
+    font-weight: normal;
+    text-align: center;
+    margin: 0px;
+    font-size: 34px;
+}
+body .container .content p:first-child{
+    font-size: 56px;
+}
+body .container .content p{
+    font-size: 20px;
+}
+body .container .boxes{
+    position: relative;
+    right: 0px;
+    left: 0px;
+    height: fit-content;
+    /* display: flex; */
+}
+body .container .boxes .box1{
+    position: absolute;
+    left: 200px;
+}
+body .container .boxes .box2{
+    position: absolute;
+    left: 530px;
+}
+body .container .boxes .box3{
+    /* position: absolute; */
+    margin-left: 900px;    
+}
+body .container .boxes div table{
+    border-collapse: collapse;
+}
+body .container .boxes div table tr{
+
+}
+body .container .boxes div table tr th{
+    border: 1px solid rgb(230, 216, 216);
+    background-color: whitesmoke;
+    font-size: 30px;
+    font-weight: lighter;
+    width: 300px;
+}
+body .container .boxes div table tr td strong{
+    font-size: 40px;
+    opacity: 0.9;
+}
+body .container .boxes div table tr td span{
+    opacity: 0.5;
+    font-size: 30px;
+}
+body .container .boxes div table{
+    border: 1px solid rgb(230, 216, 216);
+    font-size: 16px;
+}
+body .container .boxes div table tr td button a{
+    text-decoration: none;
+    color: #007bff;
+}
+body .container .boxes div table tr td button:hover{
+    background-color: #007bff;
+    
+}
+body .container .boxes div table tr td button:hover a{
+    color: white;
+}
+body .container .boxes div table tr td button{
+    background-color: white;
+    border: 1.2px solid  #007bff;
+    border-radius: 3.8px;
+    font-size: 20px;
+    padding: 8px;
+    margin: 20px;
+    color: #007bff;
+    width: 220px;
+    height: 50px;
+}
+body .container .boxes .box2 table tr td button,body .container .boxes .box3 table tr td button{
+    background-color: #007bff;
+}
+body .container .boxes .box2 table tr td button a,body .container .boxes .box3 table tr td button a{
+    color: white;
+}
+body .container .boxes .box2 table tr td button:hover,body .container .boxes .box3 table tr td button:hover{
+    background-color: #006cdf;
+}
+footer{
+    
+}
+footer .icon span{
+    margin-left:190px;
+    opacity: 0.7;
+
+}
+footer .icon .header-lists{
+    position: relative;
+    /* left: 400px; */
+    /* top: 10px; */
+    display: flex;
+    /* text-align: center; */
+}
+footer .icon .header-lists ul li{
+    list-style-type: none;
+}
+footer .icon .header-lists ul li a{
+    text-decoration: none;
+    color:black;
+    opacity: 0.6;
+    font-size: 16px;
+}
+hr{
+    border-width: 1px;
+    margin-top: 30px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
