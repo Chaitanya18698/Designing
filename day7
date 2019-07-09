@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <link rel="stylesheet" href="day7.css">
+
+
+    <header>
+        <div class="header">           
+            <div class="header-title">Company name</div>
+            <div class="header-right">
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <a class="btn" href="#">Sign up</a>
+                    </ul> 
+            </div>
+        </div>
+        </div>
+    </header>
+    
+
+    <div class="container">
+        <div class="content">
+        <h1 class="pg-title">Pricing</h1>
+        <p class="para">Quickly build an effective pricing table for your potential example with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>        
+        </div>
+
+
+            <div class="price-boxes">
+                <div class="price-box">
+                    <div class="box-header"><h3>Free</h3></div>
+                    
+                    <div class="box-body">                    
+                        <h1 class="dollar-price">$0<small> /mo</small></h1>
+                    <ul class="unstyled-list-items">
+                        <li>10 users included</li>
+                        <li>2 GB of storage</li>
+                        <li>E-mail support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <a href="#" class="box-btn1">Sign up for free</a>
+                </div>
+            </div>
+            <div class="price-box">
+                    <div class="box-header"><h3>Pro</h3></div>
+                    
+                    <div class="box-body">                    
+                        <h1 class="dollar-price">$15<small> / mo</small></h1>
+                    <ul class="unstyled-list-items">
+                        <li>20 users included</li>
+                        <li>10 GB of storage</li>
+                        <li>Priority email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <a href="#" class="box-btn2">Get started</a>
+                </div>
+            </div>
+            <div class="price-box">
+                    <div class="box-header"><h3>Enterprise</h3></div>
+                    
+                    <div class="box-body">                    
+                        <h1 class="dollar-price">$29<small> / mo</small></h1>
+                    <ul class="unstyled-list-items">
+                        <li>30 users included</li>
+                        <li>15 GB of storage</li>
+                        <li>Phone and email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <a href="#" class="box-btn3">Contact us</a>
+                </div>
+            </div>
+            </div>
+            <hr class="line-upon-footer">
+            <footer>
+                <div class="footer-logo"></div>
+                <div class="footer-unstyled">
+                    <ul class="footer-lists">
+                        <li><h3>Features</h3></li>
+                        <li><a href="#">Coolstuff</a></li>
+                        <li><a href="#">Random feature</a></li>
+                        <li><a href="#">Team feature</a></li>
+                        <li><a href="#">Stuff for developers</a></li>
+                        <li><a href="#">Another one</a></li>
+                        <li><a href="#">Last time</a></li>
+                    </ul>
+                    <ul class="footer-lists">
+                            <li><h3>Resources</h3></li>
+                            <li><a href="#">Resource</a></li>
+                            <li><a href="#">Resource name</a></li>
+                            <li><a href="#">Another resource</a></li>
+                            <li><a href="#">Final resource</a></li>
+                        </ul>
+                        <ul class="footer-lists">
+                                <li><h3>About</h3></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Terms</a></li>
+                            </ul>
+                </div>
+            </footer>
+    </div>
+</body>
+</html>
+
+//css//
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+body header{
+    height: 20px;
+    box-shadow: 1px 1px 4px rgb(224, 219, 219);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+body header .header .header-title{
+    float: left;
+    font-family: "Segoe UI",Arial,"Noto Sans",sans-serif,"Segoe UI Symbol";
+    font-size: 18px;
+}
+body header .header .header-right ul{ 
+    list-style-type: none;
+    margin: 0px;
+    padding:0px;
+    float: right;
+}
+body header .header .header-right ul li{
+    float: left;
+}
+body header .header .header-right ul li a,.btn{
+    text-decoration: none;
+    color: grey;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body header .header .header-right ul li a:hover{
+    text-decoration: underline;
+}
+body header .header .header-right ul .btn{
+    border: 1px solid #007bff;
+    height:0px;
+    border-radius: 3px;
+    color: #007bff;
+    padding: 6px;
+    font-size: 16px;
+}
+body header .header .header-right ul .btn:hover{
+    background-color: #007bff;
+    color: white;
+}
+body .container .content{
+    max-width: 500px;
+    margin: auto;
+}
+body .container .pg-title{
+    font-family: "Segoe UI",Arial,"Noto Sans",sans-serif,"Segoe UI Symbol";
+    font-weight: lighter;
+}
+body .container .pg-title,body .container .para{
+    text-align: center;
+    font-weight: normal;
+    font-size: 50px;
+}
+body .container .pg-title{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+}
+body .container .para{
+    font-size: 20px;
+    font-family: "Segoe UI",Arial,"Noto Sans",sans-serif,"Segoe UI Symbol";
+    color: grey;
+    margin-top: 0px;
+}
+body .container .price-boxes{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+}
+body .container .price-boxes .price-box .box-body .unstyled-list-items{
+    margin: 10px 10px;
+    padding: 0px;
+}
+body .container .price-boxes .price-box .box-header h3{
+    background-color:whitesmoke;
+    margin: 0px;
+    padding: 20px;
+    font-size: 25px;
+}
+body .container .price-boxes .price-box .box-body ul li{
+    list-style-type: none;
+    font-size: 20px;
+}
+body .container .price-boxes .price-box .box-body{
+    padding: 25px;
+    margin-top:10px 0px 10px 0px;
+}
+body .container .price-boxes .price-box .box-body a{
+    text-decoration: none;
+}
+body .container .price-boxes .price-box .box-body .box-btn1,.box-btn2,.box-btn3{
+    background-color: white;
+    border:1px solid #007bff;
+    color: #007bff;
+    border-radius: 4px;
+    padding: 10px 50px 10px 50px;
+    margin-top: 20px;
+    line-height: 2;
+    
+    font-size: 20px;
+}
+body .container .price-boxes .price-box .box-body .box-btn1:hover{
+    background-color: #007bff;
+    color: white;
+}
+body .container .price-boxes .price-box .box-body .box-btn2:hover,.box-btn3:hover{
+    background-color: #034c9b;
+}
+.box-btn2,.box-btn3{
+    background-color: #007bff;
+    color: white;
+}
+body .container .price-boxes .price-box{
+    border:1px solid  rgb(212, 204, 204);
+    box-shadow: 1px 1px 2px white;
+    margin: 10px;
+    text-align: center;
+    width: 500px;
+}
+hr{
+    border: 1px solid grey;
+}
+small{
+    color: grey;
+}
+button{
+    margin: 10px;
+}
+body footer{
+    max-width: 600px;
+    margin: auto;
+}
+body footer .footer-unstyled .footer-lists{
+    float: left;
+    list-style-type: none;
+    margin: 0px;
+    padding: 20px;
+}
+.line-upon-footer{
+    border: 0.8px solid rgb(204, 192, 192);
+    max-width: 1000px;
+    margin: auto;
+}
+body footer .footer-unstyled .footer-lists li a{
+    text-decoration: none;
+    color: grey;
+}
+body footer .footer-unstyled .footer-lists li a:hover{
+    text-decoration: underline;
+}
