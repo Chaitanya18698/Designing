@@ -15,8 +15,8 @@
                         <li><a href="#">Pricing</a></li>
                         <li><a class="btn" href="#">Sign up</a></li>
                     </ul> 
-            </div>
         </div>
+    </div>
         
     </header>
     
@@ -31,7 +31,7 @@
 
 
             <div class="price-boxes">
-                <div class="price-box">
+                <div class="col-4">
                     <div class="box-header"><h3>Free</h3></div>
                     
                     <div class="box-body">                    
@@ -45,7 +45,7 @@
                     <a href="#" class="box-btn1">Sign up for free</a>
                 </div>
             </div>
-            <div class="price-box">
+            <div class="col-4">
                     <div class="box-header"><h3>Pro</h3></div>
                     
                     <div class="box-body">                    
@@ -59,7 +59,7 @@
                     <a href="#" class="box-btn2">Get started</a>
                 </div>
             </div>
-            <div class="price-box">
+            <div class="col-4">
                     <div class="box-header"><h3>Enterprise</h3></div>
                     
                     <div class="box-body">                    
@@ -79,11 +79,11 @@
             <footer>
                 
                 <div class="footer-unstyled">
-                        <div class="footer-left">
+                        <div class="col-3">
                                 <p class="footer-logo">B</p>
                                     <div class="copyright-dates">&#169; 2017-2019</div>
                             </div>
-                    <ul class="footer-lists">
+                    <ul class="col-3">
                         <li><h3>Features</h3></li>
                         <li><a href="#">Coolstuff</a></li>
                         <li><a href="#">Random feature</a></li>
@@ -92,14 +92,14 @@
                         <li><a href="#">Another one</a></li>
                         <li><a href="#">Last time</a></li>
                     </ul>
-                    <ul class="footer-lists">
+                    <ul class="col-3">
                             <li><h3>Resources</h3></li>
                             <li><a href="#">Resource</a></li>
                             <li><a href="#">Resource name</a></li>
                             <li><a href="#">Another resource</a></li>
                             <li><a href="#">Final resource</a></li>
                         </ul>
-                        <ul class="footer-lists">
+                        <ul class="col-3">
                                 <li><h3>About</h3></li>
                                 <li><a href="#">Team</a></li>
                                 <li><a href="#">Locations</a></li>
@@ -118,40 +118,89 @@
 
 
 
+*{
+    
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
 body{
     margin: 0px;
     padding: 0px;
 }
+.col-4{
+    width: 33.33%;
+    box-sizing: border-box;
+    margin: 0px;
+    box-shadow: 1px 1px 6px rgb(161, 159, 159);
+}
+.col-3{
+    width: 25%;
+    box-sizing: border-box;
+}
+[class*=col-4]{
+    float: left;
+    border: 1px solid grey;
+    text-align: center;
+}
+[class*=col-3]{
+    float: left;
+    text-align: center;
+}
 body header{
-    height: 20px;
     box-shadow: 1px 1px 4px rgb(224, 219, 219);
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    clear: both;
+    display: table;
+    content: "";
 }
+
+/* @media screen and (min-width:960px){ */
 .header-title{
     float: left;
-    font-family: "Segoe UI",Arial,"Noto Sans",sans-serif,"Segoe UI Symbol";
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 400;
+    /* display: inline-block; */
 }
-.header .header-right ul{ 
+
+.header ul{ 
     list-style-type: none;
     margin: 0px;
     padding:0px;
     float: right;
+    
 }
-.header .header-right ul li{
+.header-right a:hover{
+    text-decoration: none;
+}
+.header ul li:hover{
+    text-decoration: underline;
+}
+
+
+.header ul li:last-child:hover{
+    text-decoration: none;
+}
+
+.header{
+    clear: both;
+    display: table;
+    content: "";
+}
+.header ul li{
     float: left;
 }
 a{
     text-decoration: none;
     color: grey;
 }
-.header .header-right ul li a,.btn{
+.header ul li a,.btn{
     color: black;
     padding: 10px;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.header .header-right ul .btn{
+.header ul .btn{
     border: 1px solid #007bff;
     height:0px;
     border-radius: 3px;
@@ -159,20 +208,22 @@ a{
     padding: 6px;
     font-size: 16px;
 }
-.header .header-right ul .btn:hover{
+.header ul .btn:hover{
     background-color: #007bff;
     color: white;
+    text-decoration: none;
 }
-.container,.content{
+.container{
     max-width: 1000px;
     margin: auto;
+}
+.container,.content{
     padding: 20px 10px 20px 10px;
 }
 .container .pg-title,body .container .content-text{
     text-align: center;
     font-weight: lighter;
     font-size: 50px;
-    font-family: "Segoe UI",Arial,"Noto Sans",sans-serif,"Segoe UI Symbol";
 }
 .container .pg-title{
     margin-top: 50px;
@@ -181,48 +232,58 @@ a{
 }
 body .container .content-text{
     font-size: 20px;
-    font-family: "Segoe UI",Arial,"Noto Sans",sans-serif,"Segoe UI Symbol";
     color: grey;
 }
 .container .price-boxes{
-    max-width: 1000px;
-    margin: auto;
     height: 400px;
 }
-.container .price-boxes .price-box .box-body .unstyled-list-items{
+.container .price-boxes::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.container .price-boxes .col-4 .box-body .unstyled-list-items{
     margin: 10px 10px;
     padding: 0px;
 }
-.container .price-boxes .price-box .box-header h3{
+h3{
+    font-weight: 500;
+}
+.container .price-boxes .col-4 .box-header h3{
     background-color:whitesmoke;
     margin: 0px;
-    padding: 20px;
+    padding: 12px 20px;
     font-size: 25px;
     border-bottom:1px solid rgb(207, 197, 197);
+    font-weight: 400;
 }
-.container .price-boxes .price-box .box-body ul li{
+.container .price-boxes .col-4 .box-body ul li{
     list-style-type: none;
     font-size: 20px;
 }
-.container .price-boxes .price-box .box-body{
-    padding: 25px;
+.container .price-boxes .col-4 .box-body{
+    padding: 20px;
 }
-.container .price-boxes .price-box .box-body .box-btn1,.box-btn2,.box-btn3{
+.container .price-boxes .col-4 .box-body .box-btn1,.box-btn2,.box-btn3{
     background-color: white;
     border:1px solid #007bff;
     color: #007bff;
     border-radius: 4px;
     padding: 10px 50px 10px 50px;
-    margin-top: 20px;
-    line-height: 2;   
+    margin-top: 20px;   
     font-size: 20px;
+    display: inline-block;
 }
-.container .price-boxes .price-box .box-body .box-btn1:hover{
+.container .price-boxes .col-4 .box-body .box-btn1:hover{
     background-color: #007bff;
     color: white;
+    filter: blur(1px);
 }
-.container .price-boxes .price-box .box-body .box-btn2:hover,.box-btn3:hover{
+.container .price-boxes .col-4 .box-body .box-btn2:hover,.box-btn3:hover{
     background-color: #034c9b;
+    /* filter: blur(4px); */
+    filter: drop-shadow(1px 1px 6px green);
+    
 }
 .box-btn2,.box-btn3{
     background-color: #007bff;
@@ -270,13 +331,12 @@ footer{
     border-radius: 3px;
     text-align: center;
 }
-footer .footer-unstyled .footer-lists{
+footer .footer-unstyled .col-3{
     float: left;
     list-style-type: none;
     margin: 0px;
     padding: 20px;
-    width: 200px;
 }
-footer .footer-unstyled .footer-lists li a:hover,body header .header .header-right ul li a:hover{
+footer .footer-unstyled .col-3 li a:hover,body header .header .header-right ul li a:hover{
     text-decoration: underline;
 }
