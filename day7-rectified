@@ -128,8 +128,6 @@
 
 
 
-
-
 *{  
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
@@ -196,28 +194,43 @@ body .header::after{
     background-color: #007bff;
     color: white;
 }
-.header ul a:focus{
-    color: #007bff;
-}
-
  @media screen and (max-width:768px){
+     .header{   background-color: #007bff;   }
+     .header .header-title{ color: white; }
+     .header ul .btn{
+        border: 1px solid white;
+        height:0px;
+        border-radius: 3px;
+        color: white;
+        padding: 5.25px 10.5px;
+        font-size: 14px;
+    }
+    .header ul .btn:hover{
+        background-color: white;
+        color: #007bff;
+    }
      .header-title{
          float: none;
          text-align: center;
      }
     .header ul{ 
         float: none;
+        max-width: 60%;
+        margin: auto;
+        padding-left: 20px;
+        justify-content: center;
     }
     .header ul li{
+        float: none;
         text-align: center;
-    }
-
-    .header ul li{
-        width: 100%;
         padding: 5px;
+    }
+    .header ul li:last-child{
+        width: 100%;
     }
     .row{
      max-width: 100%;
+     padding-bottom: 10px;
     }
     footer .footer-grid-4 .col-3{
         width: 50%;
