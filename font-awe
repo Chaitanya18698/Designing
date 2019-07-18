@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="font-awe.css">
+        <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/fontawesome.min.css">
+        <script src="fontawesome-free-5.9.0-web/js/all.js"></script>
+        <title>FontAwesome</title>
+    </head>
+    <body>
+        <header>
+            <div class="nav-bar">
+                <div class="slide-menu-btn"><span onclick="fnctn()">&#9776;</span></div>
+                <script>
+                    function fnctn(){
+                        if(document.getElementById("1").style.width=="0px")
+                        opennav();
+                        else
+                        closenav();
+                    }
+                    function opennav(){
+                        document.getElementById("1").style.width="200px";
+                    }
+                    function closenav(){
+                        document.getElementById("1").style.width="0px";
+                    }
+                </script>
+                <div class="icon-title">                        
+                <div class="icon"><i class="fab fa-font-awesome-alt"></i></div>
+                <div class="header-title"><h1>Font Awesome</h1></div></div>                
+                <div class="text-box"><input type="text" placeholder="Search icons..." ><div class="search"><i class="fas fa-search"></i></div></div>
+                <div class="nav-items">
+                <ul >
+                    <li id="1"><a href="#">Start</a></li>
+                    <li><a href="#">Icons</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Plans</a></li>                    
+                </ul>
+                <ul>
+                <li>
+                    <a href="#"><span>Sign In</span><i class="fas fa-sign-in-alt"></i></a>                    
+                </li>
+                </ul>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="content">
+                <div class="content-title">
+                    <h1>Start using Font Awesome for free!</h1>
+                </div>
+                <div class="content-text">Our free plan let's you get going right away. Switch to a Pro plan to get more icons, styles, kits, pageviews, & actual human tech support.</div>
+            </div>
+            <div class="cards">
+                <div class="ty">
+                <div class="card1">
+                    <div class="card-stg1">
+                        <div class="card-icon"><i class="fas fa-running"></i></div>
+                        <h2>Free</h2>
+                        <h1>$0</h1>
+                        <p>forever</p>
+                    </div>
+                    <div class="card-stg2">
+                        <li>1,534 <a href="#">Free icons</a></li>
+                        <li>1 <a href="#">Style + Brands</a></li>
+                        <li>1 <a href="#">Hosted Kits</a></li>
+                        <li>10K <a href="#">Page views/mo</a></li>
+                    </div>
+                    <div class="card-stg3">
+                        <li><span>x</span><a href="#">Auto-Subseting</a></li>
+                        <li><span>x</span><a href="#">Human Tech Support</a></li>
+                        <li><span>x</span><a href="#">Download Pro</a></li>
+                        <li><span>x</span><a href="#">Standard Pro License</a></li>
+                        <li><span>x</span><a href="#">Private NPM Repos</a></li>
+                    </div>
+                    <div class="btn"><a href="#">Start for Free</a></div>
+                </div>
+            </div>
+                <div class="ty">
+                <div class="card2">
+                    
+                        <div class="card-stg1">
+                            <div class="card-icon"><i class="fas fa-car-side"></i></div>
+                            <h2>Standard</h2>
+                            <h1>$99</h1>
+                            <p>per year</p>
+                        </div>
+                        <div class="card-stg2">
+                            <li>1,534 <a href="#">Free icons</a></li>
+                            <li>1 <a href="#">Style + Brands</a></li>
+                            <li>1 <a href="#">Hosted Kits</a></li>
+                            <li>10K <a href="#">Page views/mo</a></li>
+                        </div>
+                        <div class="card-stg3">
+                            <li><span>x</span><a href="#">Auto-Subseting</a></li>
+                            <li><span>x</span><a href="#">Human Tech Support</a></li>
+                            <li><span>x</span><a href="#">Download Pro</a></li>
+                            <li><span>x</span><a href="#">Standard Pro License</a></li>
+                            <li><span>x</span><a href="#">Private NPM Repos</a></li>
+                        </div>
+                        <div class="btn"><a href="#">Upgrade to Standard</a></div>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+*,::after::before{
+    box-sizing: border-box;
+}
+body,ul,a,h1,p{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 1px;
+}
+header .nav-bar input{
+    border-radius: 80px;
+    color: #5787ac;
+    padding: 12px 16px;
+    background-color: #1f6ab1;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-left: 20px;
+}
+header .nav-bar .text-box{
+    float: left;
+    position: relative;
+    left: 20px;
+}
+header .nav-bar .text-box .fa-search{
+    position: absolute;
+    color: #acc0cf;  
+    right: 15px;
+    bottom: 14px; 
+}
+.nav-bar::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+header{
+    background-color: #155592;
+    padding: 20px;
+}
+.nav-bar .nav-items ul li a,li a{
+    padding: 10px;
+    color: #acc0cf;
+}
+.nav-bar .nav-items{
+    font-size: 16px;
+    font-weight: 600;
+}
+.nav-bar .nav-items ul:last-child,.nav-bar .nav-items li a{
+    float: right;
+}
+.nav-bar .nav-items ul li{
+    margin: 0px 0px 0px 14px;
+    display: inline-block;
+}
+.nav-bar .nav-items ul{
+    float: left;
+    margin-left: 20px;
+}
+.nav-bar .slide-menu-btn{
+    color: #acc0cf;
+    font-size: 30px;
+    display: none;
+}
+.nav-bar .header-title{
+    color: white;
+    font-size: 14px;
+    margin-right: 50px;
+    margin-left: 50px;
+    float: left;
+}
+.fa-sign-in-alt{
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+@media screen and (max-width:1250px){
+    header .nav-bar .header-title{
+        display: none;
+    }
+}
+ 
+@media screen and (max-width:940px){
+    .nav-bar::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    header .nav-bar .text-box,header .nav-bar .nav-items ul li span{
+        display: none;
+    }
+    header .nav-bar .nav-items ul:first-child{
+        display: none;
+    }
+    .icon-title{
+        text-align: center;
+        float: left;
+        padding-left: 30px;
+    }
+    header .nav-bar .header-title{
+        display: block;
+        align-content: space-around;
+    }
+    .icon{
+        float: left;
+    }
+    .nav-bar .slide-menu-btn{
+        display: block;
+    }
+    .nav-bar .slide-menu-btn span{
+        float: left;
+    }
+    header .nav-bar .nav-items ul li a .fa-sign-in-alt{
+        right:0;
+    }
+}
+ 
+ 
+.icon{
+    color: white;
+    font-size: 30px;
+    margin-right: 20px;
+    background-color: #008df8;
+    height: 0px;
+}
+.container{
+    background-color: #0470c2;
+    height: 250px;
+}
+.content-title,.content-text{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color:white;
+    padding-top: 40px;
+    font-size: 18px;
+}
+.content-text{
+    color: #8dc0e7;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.cards{
+    max-width: 45%;
+    margin: auto;
+}
+.cards::after{
+    content: "";
+    clear:both;
+    display: table;
+}
+.ty{
+    max-width: 50%;
+
+}
+[class*='ty']{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.card1 h2,.card2 h2{
+    color: #495057;
+}
+.card1 h1{
+    color: #228be6;
+    font-size: 68px;
+    margin-bottom: 0px;
+}
+.card2 h1{
+    color: #12b886;
+    font-size: 68px;
+    margin-bottom: 0px;
+}
+.card1,.card2{
+    max-width: 90%;
+    box-shadow: 1px 1px 4px rgb(165, 163, 163);
+    background-color: white;
+    border-top: 8px solid #74c0fc;
+}
+.cards .card2{
+    border-top: 8px solid #63e6be;
+}
+.card-icon{
+    font-size: 50px;
+    opacity: 0.8;
+    padding-top: 10px;
+}
+.cards .card1 .card-stg1 p,.card2 .card-stg1 p,.cards .card1 .card-stg2,.cards .card2 .card-stg2,.cards .card1 .card-stg3,.cards .card2 .card-stg3{
+    padding-bottom: 10px;
+}
+.cards .card1 .card-stg1,.card2 .card-stg1,.cards .card1 .card-stg2,.cards .card2 .card-stg2,.cards .card1 .card-stg3,.cards .card2 .card-stg3{
+    border-bottom: 2px solid whitesmoke;
+}
+.cards .card1 .card-stg3,.cards .card2 .card-stg3{
+    text-align: center;
+}
+.cards .card1 .card-stg3 li,.cards .card2 .card-stg3 li{
+    text-align: center;
+}
+.cards .card1 .card-stg3 li,.cards .card2 .card-stg3 li a{
+    text-align-last:left;
+}
+.cards .card1 .card-stg3 li span{
+    text-align: right;
+}
+.cards .card1 li,.cards .card2 li{
+    padding: 5px;
+}
+.cards a{
+    color: black;
+}
+.cards .card1 .btn a{
+    background-color: #008df8;
+    color: white;
+    padding: 10px 14px 10px 14px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+.cards .card2 .btn a{
+    color: #63e6be;
+    padding: 10px 14px 10px 14px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bolder;
+}
