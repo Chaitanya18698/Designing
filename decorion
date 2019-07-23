@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Accordian</title>
+        <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/fontawesome.min.css">
+        <script src="fontawesome-free-5.9.0-web/js/all.js"></script>
+        <link rel="stylesheet" href="accordion.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){            
+                    if($(this).hasClass('active')){
+                       $(this).removeClass('active');
+                   
+                    }  
+                    else{
+                        $(this).next().toggleClass("active");
+                        $(this).children().css({"transform":"rotate(180deg)"});
+                    }    
+                });
+            });
+        </script>
+    </head>
+
+
+    <body>
+    <div class="accordion">
+        <h1>Accordian</h1>
+
+            <button>Section 1<i class="fas fa-angle-down"></i></button>
+            <div class="text active">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button>Section 2 <i class="fas fa-angle-down"></i></button>
+            <div class="text" >
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button>Section 3 <i class="fas fa-angle-down"></i></button>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+    </div>
+    </body>
+</html>
+
+
+button {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+.fa-angle-down{
+    float: right;
+}
+.active{
+    display: block !important;
+}
+.text {
+    padding: 0 18px;
+    background-color: white;
+    overflow: hidden;
+    display: none;
+  }
