@@ -8,46 +8,54 @@
         <link rel="stylesheet" href="accordion.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-
         <script>
+            var cls= 'li';
+            var c=0;
             $(document).ready(function(){
-                $("button").click(function(){            
-                    if($(this).hasClass('active')){
-                       $(this).removeClass('active');
-                   
-                    }  
-                    else{
-                        $(this).next().toggleClass("active");
-                        $(this).children().css({"transform":"rotate(180deg)"});
-                    }    
+                $(cls).click(function(){
+                    c=c+1;
+                    $('p').not($(this)).removeClass('active');
+                    $(this).find('p').addClass('active');
+                    $(cls).find('.fa-angle-down').removeClass("icon");
+                    $(this).find('.fa-angle-down').addClass("icon");
+
+
+                    // if($('p').display!='none')
+                    // {
+                    //     $(this).find('p').removeClass('active');
+                        
+                    // }
+                    // else
+                    // {
+                    //     $(this).find('p').addClass('active');
+                        
+                    // }
                 });
             });
         </script>
     </head>
 
-
     <body>
-    <div class="accordion">
-        <h1>Accordian</h1>
-
-            <button>Section 1<i class="fas fa-angle-down"></i></button>
-            <div class="text active">
+    <div class="accordion1">
+        <ul>
+            <li><a href="#">Section 1<i class="fas fa-angle-down"></i></a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <button>Section 2 <i class="fas fa-angle-down"></i></button>
-            <div class="text" >
+            </li>
+       
+            <li><a href="#">Section 2<i class="fas fa-angle-down"></i></a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <button>Section 3 <i class="fas fa-angle-down"></i></button>
-            <div class="text">
+            </li>
+        
+            <li><a href="#">Section 3<i class="fas fa-angle-down"></i></a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
+            </li>
+        </ul>
     </div>
     </body>
 </html>
 
 
-button {
+/* button {
     background-color: #eee;
     color: #444;
     cursor: pointer;
@@ -58,16 +66,54 @@ button {
     outline: none;
     font-size: 15px;
     transition: 0.4s;
-  }
-.fa-angle-down{
-    float: right;
-}
-.active{
-    display: block !important;
-}
-.text {
+  } */
+/* .text {
     padding: 0 18px;
     background-color: white;
     overflow: hidden;
     display: none;
+  } */
+  body{
+    margin: 0px;
+    padding: 0px;
   }
+  ul{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: #eee;
+  }
+  li a{
+    
+    color: #444;
+    cursor: pointer;
+    
+    text-align: left;
+    font-size: 15px;
+    transition: 0.4s; 
+    text-decoration: none;
+  }
+  li{
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+  }
+  li:hover{
+    background-color: rgb(158, 154, 154);
+  }
+  .accordion1 ul li p{
+    display: none;
+    margin-bottom: 0px;
+  }
+  .fa-angle-down{
+    float: right;
+}
+.icon{
+  transform: rotate(180deg);
+}
+
+.active{
+    display: block !important;
+    transition-duration: 1s;
+    transition-property: visibility;
+}
