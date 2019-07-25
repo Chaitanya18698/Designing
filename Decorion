@@ -14,13 +14,13 @@
                     var parent = $(this).parent('li');
                     if(parent.hasClass('active')){
                         parent.find('p').slideToggle();
-                        parent.removeClass('active');
+                        parent.toggleClass('active');
                     }
-                    else{
-                        parent.addClass('active');
+                    else{                      
                         $('.accordion1 li').removeClass('active');
                         $('.accordion1 li > p').slideUp();
-                        parent.find('p').slideDown();                      
+                        parent.find('p').slideDown();     
+                        parent.addClass('active');                 
                     }
                     return false;
 
