@@ -9,40 +9,35 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
         <script>
-            var cls= 'li';
-            var c=0;
             $(document).ready(function(){
-                $(cls).click(function(){
-                    c=c+1;
-                    $('p').not($(this)).removeClass('active');
-                    $(this).find('p').addClass('active');
-                    $(cls).find('.fa-angle-down').removeClass("icon");
-                    $(this).find('.fa-angle-down').addClass("icon");
+                $('.accordion1 li > a').click(function(){
+                    var parent = $(this).parent('li');
+                    if(parent.hasClass('active')){
+                        parent.find('p').slideToggle();
+                        parent.removeClass('active');
+                    }
+                    else{
+                        parent.addClass('active');
+                        $('.accordion1 li').removeClass('active');
+                        $('.accordion1 li > p').slideUp();
+                        parent.find('p').slideDown();                      
+                    }
+                    return false;
 
-
-                    // if($('p').display!='none')
-                    // {
-                    //     $(this).find('p').removeClass('active');
-                        
-                    // }
-                    // else
-                    // {
-                    //     $(this).find('p').addClass('active');
-                        
-                    // }
                 });
             });
         </script>
     </head>
 
     <body>
-    <div class="accordion1">
+    <div class="accordion1" data-toggle="modal" data-target="">
         <ul>
-            <li><a href="#">Section 1<i class="fas fa-angle-down"></i></a>
+            <li>
+                <a href="#">Section 1<i class="fas fa-angle-down"></i></a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </li>
        
-            <li><a href="#">Section 2<i class="fas fa-angle-down"></i></a>
+            <li><a href="#" >Section 2<i class="fas fa-angle-down"></i></a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </li>
         
@@ -50,7 +45,12 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </li>
         </ul>
+
+        
     </div>
+    <ul class="list">
+        <li>Hello</li>
+    </ul>
     </body>
 </html>
 
@@ -77,38 +77,40 @@
     margin: 0px;
     padding: 0px;
   }
-  ul{
+  .accordion1 ul{
     margin: 0px;
     padding: 0px;
     width: 100%;
-    background-color: #eee;
+    
   }
-  li a{
-    
-    color: #444;
+  .accordion1 li{
+    list-style: none;
     cursor: pointer;
-    
+    background-color: #eee;
+    margin-bottom: 2px;
+  }  
+  .accordion1 ul li a{    
+    color: #444;
+    cursor: pointer;    
     text-align: left;
     font-size: 15px;
-    transition: 0.4s; 
     text-decoration: none;
+    display: block;
+    padding: 10px;
+    background: #d6d6d6;
   }
-  li{
-    list-style: none;
-    padding: 20px;
-    cursor: pointer;
-  }
-  li:hover{
-    background-color: rgb(158, 154, 154);
-  }
+  
   .accordion1 ul li p{
+    margin: 0px;
+    padding: 10px;
     display: none;
     margin-bottom: 0px;
   }
-  .fa-angle-down{
+
+  .accordion1 .fa-angle-down{
     float: right;
-}
-.icon{
+  }
+  .accordion1 ul li.active .fa-angle-down{
   transform: rotate(180deg);
 }
 
