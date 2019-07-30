@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootTrial.css">
+        <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.css"> 
+    </head>
+    <body>
+        <nav class="navbar bg-secondary bg-dark mb-5 sticky-top">
+                <div class="container">
+            <a class="navbar-brand text-uppercase text-light font-weight-bold" href="#">Start Bootstrap </a>
+            
+                
+                <ul class="navbar-nav navbar-expand-lg flex-row p-4">
+                    <li class="nav-item"><a class="nav-link text-light text-uppercase  mx-1 p-2 font-weight-bold" href="#portfolio">portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link text-light text-uppercase  mx-1 p-2 font-weight-bold" href="#about">about</a></li>
+                    <li class="nav-item"><a class="nav-link text-light text-uppercase  mx-1 p-2 font-weight-bold" href="#contact">contact</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+        
+        <div class="container text-center">
+            <div class="content pb-5">
+                <img src="images/avatar.png" alt="" >
+                    <div class="content-text display-3 text-uppercase font-weight-bold text-light">
+                        start bootstrap
+                    </div>
+                    <div class="divider-custom divider-light py-5">
+                        <div class="divider-custom-icon text-light display-4 font-weight-bold"><i class="far fa-star"></i></div>
+                    </div>
+                    <div class="content-text text-light h2 font-weight-bold">
+                        <span>Graphic Artist - Web Designer -Illustrator</span>
+                    </div>
+                </div>
+
+        </div>
+
+        <section class="bg-light text-center container-fluid py-5 " id="portfolio">
+            <div class="text-uppercase font-weight-bold py-5" >
+                <h1>portfolio</h1>
+                <div class="divider-custom-icon display-4 font-weight-bold ">
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row mb-5 ">          
+                <div class="col-4 ">
+                <div class="card">
+                    <img src="images/creative.jpg" alt="">
+                </div>
+                </div>
+                     
+                <div class="col-4">
+                        <div class="card">
+                        <img src="images/creative.jpg" alt="">
+                </div>
+                </div>
+
+                <div class="col-4">
+                        <div class="card">
+                            <img src="images/creative.jpg" alt="">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row mb-5">          
+                            <div class="col-4">
+                            <div class="card">
+                                <img src="images/creative.jpg" alt="">
+                            </div>
+                            </div>
+                                 
+                            <div class="col-4">
+                                    <div class="card">
+                                    <img src="images/creative.jpg" alt="">
+                            </div>
+                            </div>
+            
+                            <div class="col-4">
+                                    <div class="card">
+                                        <img src="images/creative.jpg" alt="">
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="row">          
+                                        <div class="col-4">
+                                        <div class="card">
+                                            <img src="images/creative.jpg" alt="">
+                                        </div>
+                                        </div>
+                                             
+                                        <div class="col-4">
+                                                <div class="card">
+                                                <img src="images/creative.jpg" alt="">
+                                        </div>
+                                        </div>
+                        
+                                        <div class="col-4">
+                                                <div class="card">
+                                                    <img src="images/creative.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            </div>
+
+            </div>
+        </section>
+        <section class="text-center py-5" id="about">
+            <div class="content-text h1 text-light font-weight-bold text-uppercase pt-5">
+                about
+            </div>
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 ml-auto text-light font-weight-bold">            
+                        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>                      
+                    </div>
+
+                    <div class="col-5 mr-auto text-light font-weight-bold pb-5">
+                        <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+                    </div>                    
+                </div>
+                <button type="button" class="btn btn-xl btn-outline-light px-5 py-3"><i class="fas fa-download"></i> Free Download !</button>
+            </div>
+        </section>
+
+        <section class="bg-light  text-center container-fluid" id="contact">
+            <div class="text-uppercase text-center py-5 ">
+                <h1>Contact me</h1>
+            </div>
+            <div class="divider-custom-icon display-4 font-weight-bold"><i class="far fa-star"></i></div>
+            
+            <form>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                   
+                    <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                </div>
+                <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                        
+                        <input type="text" class="form-control" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                           
+                            <input type="text" class="form-control" placeholder="Phone Number">
+                            </div>
+                        </div>
+                <textarea type="text" class="form-control" placeholder="Message"></textarea>
+            </form>
+
+        </section>
+         
+    </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</html>
+
+
+body{
+    background-color: #1abc9c;
+}
+nav .navbar-nav .nav-item a:hover{
+    color: #039477; 
+}
