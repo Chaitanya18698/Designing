@@ -3,18 +3,21 @@
     <head>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="bootTrial.css">
-        <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.css"> 
+        <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.css">
+
+       
     </head>
-    <body>
+
+    <body data-spy="scroll" data-target=".navbar">
         <nav class="navbar bg-secondary bg-dark mb-5 sticky-top">
                 <div class="container">
             <a class="navbar-brand text-uppercase text-light font-weight-bold" href="#">Start Bootstrap </a>
             
                 
                 <ul class="navbar-nav navbar-expand-lg flex-row p-4">
-                    <li class="nav-item"><a class="nav-link text-light text-uppercase  mx-1 p-2 font-weight-bold" href="#portfolio">portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link text-light text-uppercase  mx-1 p-2 font-weight-bold" href="#about">about</a></li>
-                    <li class="nav-item"><a class="nav-link text-light text-uppercase  mx-1 p-2 font-weight-bold" href="#contact">contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-light text-uppercase  mx-1 p-2 font-weight-bold rounded js-scroll-trigger" href="#portfolio">portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link text-light text-uppercase  mx-1 p-2 font-weight-bold rounded js-scroll-trigger" href="#about">about</a></li>
+                    <li class="nav-item"><a class="nav-link text-light text-uppercase  mx-1 p-2 font-weight-bold rounded js-scroll-trigger" href="#contact">contact</a></li>
                 </ul>
                 
             </div>
@@ -26,8 +29,10 @@
                     <div class="content-text display-3 text-uppercase font-weight-bold text-light">
                         start bootstrap
                     </div>
-                    <div class="divider-custom divider-light py-5">
-                        <div class="divider-custom-icon text-light display-4 font-weight-bold"><i class="far fa-star"></i></div>
+                    <div class=" icon pb-3 display-4 font-weight-bold text-light">
+                            <div class="text-center bg-light line"></div>
+                            <i class="fas fa-star"></i>
+                             <div class="line bg-light"></div>
                     </div>
                     <div class="content-text text-light h2 font-weight-bold">
                         <span>Graphic Artist - Web Designer -Illustrator</span>
@@ -39,69 +44,70 @@
         <section class="bg-light text-center container-fluid py-5 " id="portfolio">
             <div class="text-uppercase font-weight-bold py-5" >
                 <h1>portfolio</h1>
-                <div class="divider-custom-icon display-4 font-weight-bold ">
-                    <i class="far fa-star"></i>
-                </div>
+                <div class=" icon pb-3 display-4 font-weight-bold">
+                        <div class="text-center line"></div>
+                        <i class="fas fa-star"></i>
+                         <div class="line"></div>
             </div>
-            <div class="container">
+            <div class="container pb-5">
                 <div class="row mb-5 ">          
                 <div class="col-4 ">
                 <div class="card">
-                    <img src="images/creative.jpg" alt="">
+                    <img src="images/creative.jpg" class="rounded img-fluid" alt="">
+                    <div class="card-plus" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fas fa-plus"></i>
+                    </div>
                 </div>
                 </div>
                      
                 <div class="col-4">
                         <div class="card">
-                        <img src="images/creative.jpg" alt="">
+                        <img src="images/creative.jpg" class="rounded img-fluid" alt="">
+                        <div class="card-plus" data-toggle="modal" data-target="#exampleModal">
+                                <i class="fas fa-plus"></i>
+                        </div>
                 </div>
                 </div>
 
                 <div class="col-4">
                         <div class="card">
-                            <img src="images/creative.jpg" alt="">
+                            <img src="images/creative.jpg" class="rounded img-fluid" alt="">
+                            <div class="card-plus" data-toggle="modal" data-target="#exampleModal">
+                                    <i class="fas fa-plus"></i>
+                            </div>
                         </div>
                     </div>
                     </div>
                     <div class="row mb-5">          
                             <div class="col-4">
                             <div class="card">
-                                <img src="images/creative.jpg" alt="">
+                                <img src="images/creative.jpg"  class="rounded img-fluid" alt="">
+                                <div class="card-plus" data-toggle="modal" data-target="#exampleModal">
+                                    <i class="fas fa-plus"></i>
+                                </div>
                             </div>
                             </div>
                                  
                             <div class="col-4">
                                     <div class="card">
-                                    <img src="images/creative.jpg" alt="">
+                                    <img src="images/creative.jpg"  class="rounded img-fluid" alt="">
+                                    <div class="card-plus" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
                             </div>
                             </div>
             
                             <div class="col-4">
                                     <div class="card">
-                                        <img src="images/creative.jpg" alt="">
+                                        <img src="images/creative.jpg"  class="rounded img-fluid" alt="">
+                                        <div class="card-plus" data-toggle="modal" data-target="#exampleModal">
+                                            <i class="fas fa-plus"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 </div>
 
-                                <div class="row">          
-                                        <div class="col-4">
-                                        <div class="card">
-                                            <img src="images/creative.jpg" alt="">
-                                        </div>
-                                        </div>
-                                             
-                                        <div class="col-4">
-                                                <div class="card">
-                                                <img src="images/creative.jpg" alt="">
-                                        </div>
-                                        </div>
-                        
-                                        <div class="col-4">
-                                                <div class="card">
-                                                    <img src="images/creative.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            </div>
+                               
 
             </div>
         </section>
@@ -109,61 +115,211 @@
             <div class="content-text h1 text-light font-weight-bold text-uppercase pt-5">
                 about
             </div>
-           
+            <div class=" icon pb-3 display-4 font-weight-bold text-light">
+                    <div class="text-center bg-light line"></div>
+                    <i class="fas fa-star"></i>
+                     <div class="line bg-light"></div>
+            </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-5 ml-auto text-light font-weight-bold">            
+                <div class="row p-5">
+                    <div class="col-3 ml-auto text-light font-weight-bold text-left">            
                         <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>                      
                     </div>
 
-                    <div class="col-5 mr-auto text-light font-weight-bold pb-5">
+                    <div class="col-3 mr-auto text-light font-weight-bold text-left">
                         <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
                     </div>                    
                 </div>
-                <button type="button" class="btn btn-xl btn-outline-light px-5 py-3"><i class="fas fa-download"></i> Free Download !</button>
+                <button type="button" class="btn btn-xl btn-outline-light px-5 py-3 mb-5 "><i class="fas fa-download"></i> Free Download !</button>
             </div>
         </section>
 
-        <section class="bg-light  text-center container-fluid" id="contact">
-            <div class="text-uppercase text-center py-5 ">
+        <section class="bg-light  text-center container-fluid pt-5" id="contact">
+            <div class="container">
+            <div class="text-uppercase text-center pt-5 ">
                 <h1>Contact me</h1>
             </div>
-            <div class="divider-custom-icon display-4 font-weight-bold"><i class="far fa-star"></i></div>
+            <div class=" icon pb-3 display-4 font-weight-bold">
+                    <div class="text-center line"></div>
+                        <i class="fas fa-star"></i>
+                    <div class="line"></div>
+            </div>
             
-            <form>
-                <div class="control-group">
-                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+            <form class="p-5">
+                <div class="control-group p-3">
+                    <div class="form-group mb-0 pb-2">
                    
-                    <input type="text" class="form-control" placeholder="Name">
+                    <input type="text" class="form-control bg-light border-top-0 border-right-0 border-left-0" placeholder="Name">
+                </div>
+                </div>
+                <div class="control-group p-3 ">
+                    <div class="form-group  mb-0 pb-2">
+                        
+                    <input type="text" class="form-control border-top-0 bg-light border-right-0 border-left-0" placeholder="Email Address">
                     </div>
                 </div>
-                <div class="control-group">
-                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                        
-                        <input type="text" class="form-control" placeholder="Email Address">
-                        </div>
+                <div class="control-group p-3">
+                    <div class="form-group  mb-0 pb-2">
+                    
+                    <input type="text" class="form-control bg-light border-top-0 border-right-0 border-left-0" placeholder="Phone Number">
                     </div>
-                    <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                           
-                            <input type="text" class="form-control" placeholder="Phone Number">
-                            </div>
-                        </div>
-                <textarea type="text" class="form-control" placeholder="Message"></textarea>
+                </div>
+                <div class="control-group p-3">
+                    <div class="form-group  mb-0 pb-2">
+                    
+                    <textarea placeholder="Message" class="form-control bg-light border-top-0 border-right-0 border-left-0"></textarea>
+                    </div>
+                </div>
+                <div class="form-group text-left ml-3">
+                    <button type="submit" class="btn btn-xl btn-outline-primary">Send me</button>
+                </div>
             </form>
-
+            
+        </div>
         </section>
-         
+        
+<!--footer-->
+        <footer class="footer text-light text-center bg-dark font-weight-bold">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 py-5">
+                    <h4 class="mb-5">LOCATION</h4>
+                    <p class="lead">2215 John Daniel Drive <br>
+                            Clark, MO 65243</p>
+                </div>
+                <div class="col-4 py-5">
+                        <h4 class="mb-5">AROUND THE WEB</h4>
+                        <a href="#" class="btn btn-social btn-facebook btn-outline-light mx-1"><i class="fab fa-fw fa-facebook-f"></i></a> 
+                        <a href="#" class="btn btn-social btn-outline-light mx-1"><i class="fab fa-twitter"></i></a> 
+                        <a href="#" class="btn btn-social btn-outline-light mx-1"><i class="fab fa-linkedin "></i></a> 
+                        <a href="#" class="btn btn-social btn-outline-light mx-1"><i class="fas fa-basketball-ball"></i></a> 
+                </div>
+                <div class="col-4 py-5">
+                        <h4 class="mb-5">ABOUT FREELANCER</h4>
+                        <p class="lead">Freelance is a free to use, MIT licensed Bootstrap theme created by <a href="#" style="color: #1abc9c">Start Bootstrap. </a></p>
+                </div>
+            </div>
+            
+        </div>
+
+        </footer>
+        <section class="copyright py-4 text-center text-light">
+            <div class="container">
+                <small>Copyright &#169; Your Website 2019</small>
+            </div>
+        </section> 
+
+        <!--Modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header  text-center border-0">
+                      <h5 class="modal-title h1" id="exampleModalLabel"></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                
+                    <div class="modal-body text-center">
+                        <h1 class=" font-weight-bold">CONTROLLER</h1>
+                        <div class=" icon pb-3 display-4 font-weight-bold">
+                                <div class="text-center line"></div>
+                                <i class="fas fa-star"></i>
+                                 <div class="line"></div>
+                        </div>
+                              
+                        <img src="images/modal-image.png" class=" img-fluid rounded pb-5" alt=""><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                        <button type="button" class="btn btn-secondary bg-dark" data-dismiss="modal">&times;  Close Window</button>
+                    </div>
+                    
+                    <div class="modal-footer text-center border-top-0">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
     </body>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+            $(document).ready(function(){
+                $(document).on('click','.js-scroll-trigger',function(){
+                    var target = $(this).attr('href');
+                    var headerHeight = $('.navbar').outerHeight();
+                    $('html').animate({scrollTop:$(target).offset().top - headerHeight}, 500);
+                    return false;
+                });
+                $(window).scroll(function() {
+                    if($(window).scrollTop() >= 100) {
+                        $('.navbar').addClass('navbar-shrink');
+                        }
+                    else {
+                        $('.navbar').removeClass('navbar-shrink');
+                         }
+                    });
+                });
+
+    </script>
 </html>
 
 
 body{
     background-color: #1abc9c;
 }
-nav .navbar-nav .nav-item a:hover{
-    color: #039477; 
+.active{
+    color: #fff;
+    background: #1abc9c;
+}
+html{
+    scroll-behavior: smooth;
+}
+.copyright{
+    background-color: black;
+}
+.navbar-shrink{
+    min-height: 6px;
+    background: black;
+    transition: 0.35s all ease;
+}
+.card-plus{
+    position: absolute;
+    color: white;
+    font-size: 5rem;
+    background: #1abc9c;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{   
+    width: 100%;
+    max-width: 7rem;
+    height: .25rem;
+    color: white;
+    background-color: #2c3e50;
+    border-radius: 1rem;
+    border-color: #2c3e50!important;    
+}
+.btn{
+    width: fit-content;
+}
+.btn-social{
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+    line-height: 48px;
+}
+.card-plus:hover{
+    opacity: 0.9 !important;
 }
