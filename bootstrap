@@ -3,18 +3,16 @@
     <head>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="bootTrial.css">
-        <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.css">
-
-       
+        <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.css">      
     </head>
 
-    <body data-spy="scroll" data-target=".navbar">
-        <nav class="navbar bg-secondary bg-dark mb-5 sticky-top">
+    <body>
+        <nav class="navbar sticky-top py-4">
                 <div class="container">
-            <a class="navbar-brand text-uppercase text-light font-weight-bold" href="#">Start Bootstrap </a>
+            <a class="navbar-brand text-uppercase text-light font-weight-bold js-scroll-trigger" href="#">Start Bootstrap </a>
             
                 
-                <ul class="navbar-nav navbar-expand-lg flex-row p-4">
+                <ul class="navbar-nav navbar-expand-lg flex-row">
                     <li class="nav-item"><a class="nav-link text-light text-uppercase  mx-1 p-2 font-weight-bold rounded js-scroll-trigger" href="#portfolio">portfolio</a></li>
                     <li class="nav-item"><a class="nav-link text-light text-uppercase  mx-1 p-2 font-weight-bold rounded js-scroll-trigger" href="#about">about</a></li>
                     <li class="nav-item"><a class="nav-link text-light text-uppercase  mx-1 p-2 font-weight-bold rounded js-scroll-trigger" href="#contact">contact</a></li>
@@ -25,13 +23,13 @@
         
         <div class="container text-center">
             <div class="content pb-5">
-                <img src="images/avatar.png" alt="" >
+                <img src="images/avataaars.svg" class="avatar mb-5" alt="" >
                     <div class="content-text display-3 text-uppercase font-weight-bold text-light">
                         start bootstrap
                     </div>
-                    <div class=" icon pb-3 display-4 font-weight-bold text-light">
+                    <div class="icon pb-3 display-4 font-weight-bold text-light">
                             <div class="text-center bg-light line"></div>
-                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star fa-spin mx-3"></i>
                              <div class="line bg-light"></div>
                     </div>
                     <div class="content-text text-light h2 font-weight-bold">
@@ -41,21 +39,21 @@
 
         </div>
 
-        <section class="bg-light text-center container-fluid py-5 " id="portfolio">
-            <div class="text-uppercase font-weight-bold py-5" >
+        <section class="bg-light text-center container-fluid" id="portfolio">
+            <div class="text-uppercase font-weight-bold" >
                 <h1>portfolio</h1>
                 <div class=" icon pb-3 display-4 font-weight-bold">
                         <div class="text-center line"></div>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star fa-spin mx-3"></i>
                          <div class="line"></div>
             </div>
-            <div class="container pb-5">
-                <div class="row mb-5 ">          
+            <div class="container">
+                <div class="row pb-5 ">          
                 <div class="col-4 ">
                 <div class="card">
                     <img src="images/creative.jpg" class="rounded img-fluid" alt="">
                     <div class="card-plus" data-toggle="modal" data-target="#exampleModal">
-                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-plus fa-spin"></i>
                     </div>
                 </div>
                 </div>
@@ -64,7 +62,7 @@
                         <div class="card">
                         <img src="images/creative.jpg" class="rounded img-fluid" alt="">
                         <div class="card-plus" data-toggle="modal" data-target="#exampleModal">
-                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-plus fa-spin"></i>
                         </div>
                 </div>
                 </div>
@@ -73,7 +71,7 @@
                         <div class="card">
                             <img src="images/creative.jpg" class="rounded img-fluid" alt="">
                             <div class="card-plus" data-toggle="modal" data-target="#exampleModal">
-                                    <i class="fas fa-plus"></i>
+                                    <i class="fas fa-plus fa-spin"></i>
                             </div>
                         </div>
                     </div>
@@ -83,7 +81,7 @@
                             <div class="card">
                                 <img src="images/creative.jpg"  class="rounded img-fluid" alt="">
                                 <div class="card-plus" data-toggle="modal" data-target="#exampleModal">
-                                    <i class="fas fa-plus"></i>
+                                    <i class="fas fa-plus fa-spin"></i>
                                 </div>
                             </div>
                             </div>
@@ -92,7 +90,7 @@
                                     <div class="card">
                                     <img src="images/creative.jpg"  class="rounded img-fluid" alt="">
                                     <div class="card-plus" data-toggle="modal" data-target="#exampleModal">
-                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-plus fa-spin"></i>
                                     </div>
                             </div>
                             </div>
@@ -101,7 +99,7 @@
                                     <div class="card">
                                         <img src="images/creative.jpg"  class="rounded img-fluid" alt="">
                                         <div class="card-plus" data-toggle="modal" data-target="#exampleModal">
-                                            <i class="fas fa-plus"></i>
+                                            <i class="fas fa-plus fa-spin"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -111,37 +109,37 @@
 
             </div>
         </section>
-        <section class="text-center py-5" id="about">
-            <div class="content-text h1 text-light font-weight-bold text-uppercase pt-5">
+        <section class="text-center" id="about">
+            <div class="content-text h1 text-light font-weight-bold text-uppercase">
                 about
             </div>
             <div class=" icon pb-3 display-4 font-weight-bold text-light">
                     <div class="text-center bg-light line"></div>
-                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star fa-spin mx-3"></i>
                      <div class="line bg-light"></div>
             </div>
             <div class="container">
-                <div class="row p-5">
-                    <div class="col-3 ml-auto text-light font-weight-bold text-left">            
+                <div class="row p-5 text-light text-left">
+                    <div class="col-4 ml-auto ">            
                         <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>                      
                     </div>
 
-                    <div class="col-3 mr-auto text-light font-weight-bold text-left">
+                    <div class="col-4 mr-auto text-light text-left">
                         <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
                     </div>                    
                 </div>
-                <button type="button" class="btn btn-xl btn-outline-light px-5 py-3 mb-5 "><i class="fas fa-download"></i> Free Download !</button>
+                <button type="button" class="btn btn-xl btn-outline-light px-4 py-3 mb-5 "><i class="fas fa-download"></i> Free Download !</button>
             </div>
         </section>
 
-        <section class="bg-light  text-center container-fluid pt-5" id="contact">
+        <section class="bg-light  text-center container-fluid" id="contact">
             <div class="container">
-            <div class="text-uppercase text-center pt-5 ">
+            <div class="text-uppercase text-center">
                 <h1>Contact me</h1>
             </div>
-            <div class=" icon pb-3 display-4 font-weight-bold">
+            <div class=" icon display-4 font-weight-bold">
                     <div class="text-center line"></div>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star fa-spin mx-3"></i>
                     <div class="line"></div>
             </div>
             
@@ -179,7 +177,7 @@
         </section>
         
 <!--footer-->
-        <footer class="footer text-light text-center bg-dark font-weight-bold">
+        <footer class="footer text-light text-center font-weight-bold">
         <div class="container">
             <div class="row">
                 <div class="col-4 py-5">
@@ -189,7 +187,7 @@
                 </div>
                 <div class="col-4 py-5">
                         <h4 class="mb-5">AROUND THE WEB</h4>
-                        <a href="#" class="btn btn-social btn-facebook btn-outline-light mx-1"><i class="fab fa-fw fa-facebook-f"></i></a> 
+                        <a href="#" class="btn btn-social btn-outline-light mx-1"><i class="fab fa-fw fa-facebook-f"></i></a> 
                         <a href="#" class="btn btn-social btn-outline-light mx-1"><i class="fab fa-twitter"></i></a> 
                         <a href="#" class="btn btn-social btn-outline-light mx-1"><i class="fab fa-linkedin "></i></a> 
                         <a href="#" class="btn btn-social btn-outline-light mx-1"><i class="fas fa-basketball-ball"></i></a> 
@@ -216,20 +214,20 @@
                     <div class="modal-header  text-center border-0">
                       <h5 class="modal-title h1" id="exampleModalLabel"></h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
+                          <span aria-hidden="true"> <i class="fas fa-times display-4"></i> </span>
                         </button>
                     </div>
                 
                     <div class="modal-body text-center">
                         <h1 class=" font-weight-bold">CONTROLLER</h1>
                         <div class=" icon pb-3 display-4 font-weight-bold">
-                                <div class="text-center line"></div>
-                                <i class="fas fa-star"></i>
-                                 <div class="line"></div>
-                        </div>
-                              
-                        <img src="images/modal-image.png" class=" img-fluid rounded pb-5" alt=""><br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <div class="text-center line"></div>
+                            <i class="fas fa-star mx-3"></i>
+                            <div class="line"></div>
+                            </div>
+                                
+                                <img src="images/modal-image.png" class=" img-fluid rounded pb-5" alt=""><br>
+                        <p class="pb-5 modal-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                         <button type="button" class="btn btn-secondary bg-dark" data-dismiss="modal">&times;  Close Window</button>
                     </div>
                     
@@ -245,22 +243,23 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
+            
             $(document).ready(function(){
-                $(document).on('click','.js-scroll-trigger',function(){
-                    var target = $(this).attr('href');
-                    var headerHeight = $('.navbar').outerHeight();
-                    $('html').animate({scrollTop:$(target).offset().top - headerHeight}, 500);
-                    return false;
-                });
-                $(window).scroll(function() {
-                    if($(window).scrollTop() >= 100) {
-                        $('.navbar').addClass('navbar-shrink');
+                $('.nav-item').click(function(){
+                    var target = $(this).children();
+                    if($(target).hasClass('active'));
+                    {
+                        $(this).removeClass('active');
+                        $(this).addClass('active');
+                    }
+                    else
+                        {
+                            $(this).addClass('active');
+                            $(this).removeClass('active');
                         }
-                    else {
-                        $('.navbar').removeClass('navbar-shrink');
-                         }
-                    });
-                });
+
+            });
+            });
 
     </script>
 </html>
@@ -276,15 +275,26 @@ body{
 html{
     scroll-behavior: smooth;
 }
+.fa-times{
+    color: #1abc9c;
+}
+body nav{
+    background-color: #2C3E50;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+body .container .avatar{
+    width: 15rem;
+}
 .copyright{
-    background-color: black;
+    background-color: rgb(23, 33, 43);
 }
 .navbar-shrink{
     min-height: 6px;
     background: black;
     transition: 0.35s all ease;
 }
-.card-plus{
+section .col-4 .card .card-plus{
+    cursor: pointer;
     position: absolute;
     color: white;
     font-size: 5rem;
@@ -296,10 +306,20 @@ html{
     align-items: center;
     opacity: 0;
 }
+section .container .row{
+    font-weight: 600;
+    letter-spacing: 0.6px;
+}
+.modal-text{
+    max-width: 80%;
+    margin: auto;
+}
 .icon{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .line{   
     width: 100%;
@@ -312,14 +332,31 @@ html{
 }
 .btn{
     width: fit-content;
+    font-size: 20px;
 }
 .btn-social{
+    border: 2px solid white;
     border-radius: 100%;
     height: 50px;
     width: 50px;
     padding: 0px;
     line-height: 48px;
+    
+}
+footer{
+    background-color: #2c3e50;
 }
 .card-plus:hover{
     opacity: 0.9 !important;
+}
+section{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+body nav + .container{
+    padding-top: calc(3rem + 88px);
+    padding-bottom: 3rem;
+}
+.fa-star{
+    font-size: 30px;
 }
