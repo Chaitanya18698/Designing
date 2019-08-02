@@ -7,17 +7,19 @@
     </head>
 
     <body>
-        <nav class="navbar sticky-top py-4">
-                <div class="container">
+        <nav class="navbar sticky-top py-4  navbar-expand-lg">
+            <div class="container">
             <a class="navbar-brand text-uppercase text-light font-weight-bold js-scroll-trigger" href="#">Start Bootstrap </a>
-            
-                
-                <ul class="navbar-nav navbar-expand-lg flex-row">
+            <button class="navbar-toggler bg-primary text-white px-3 py-2" data-toggle="collapse" data-target="#pro">
+                    <span>Menu</span>
+            </button>
+                <div class="navbar-collapse collapse" id="pro">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link text-light text-uppercase  mx-1 p-2 font-weight-bold rounded js-scroll-trigger" href="#portfolio">portfolio</a></li>
                     <li class="nav-item"><a class="nav-link text-light text-uppercase  mx-1 p-2 font-weight-bold rounded js-scroll-trigger" href="#about">about</a></li>
                     <li class="nav-item"><a class="nav-link text-light text-uppercase  mx-1 p-2 font-weight-bold rounded js-scroll-trigger" href="#contact">contact</a></li>
                 </ul>
-                
+            </div>
             </div>
         </nav>
         
@@ -142,30 +144,32 @@
                         <i class="fas fa-star fa-spin mx-3"></i>
                     <div class="line"></div>
             </div>
+
+            <!--form-->
             
             <form class="p-5">
                 <div class="control-group p-3">
                     <div class="form-group mb-0 pb-2">
-                   
-                    <input type="text" class="form-control bg-light border-top-0 border-right-0 border-left-0" placeholder="Name">
-                </div>
+                        <input type="text" class="form-control bg-light border-top-0 border-right-0 border-left-0" placeholder="Name" required>
+                        <label class="form-control-placeholder">Name</label>
+                    </div>
                 </div>
                 <div class="control-group p-3 ">
                     <div class="form-group  mb-0 pb-2">
-                        
-                    <input type="text" class="form-control border-top-0 bg-light border-right-0 border-left-0" placeholder="Email Address">
+                    <input type="text" class="form-control border-top-0 bg-light border-right-0 border-left-0" placeholder="Email Address" required>
+                    <label for="email" class="form-control-placeholder">Email Address</label>
                     </div>
                 </div>
                 <div class="control-group p-3">
                     <div class="form-group  mb-0 pb-2">
-                    
-                    <input type="text" class="form-control bg-light border-top-0 border-right-0 border-left-0" placeholder="Phone Number">
+                    <input type="text" class="form-control bg-light border-top-0 border-right-0 border-left-0" placeholder="Phone Number" required>
+                    <label for="phone number" class="form-control-placeholder">Phone Number</label>
                     </div>
                 </div>
                 <div class="control-group p-3">
                     <div class="form-group  mb-0 pb-2">
-                    
-                    <textarea placeholder="Message" class="form-control bg-light border-top-0 border-right-0 border-left-0"></textarea>
+                    <textarea class="form-control bg-light border-top-0 border-right-0 border-left-0" placeholder="Message" required></textarea>
+                    <label for="message" class="form-control-placeholder">Message</label>
                     </div>
                 </div>
                 <div class="form-group text-left ml-3">
@@ -245,33 +249,73 @@
     <script>
             
             $(document).ready(function(){
-                $('.nav-item').click(function(){
-                    var target = $(this).children();
-                    if($(target).hasClass('active'));
+                $('.nav-link').click(function(){
+                    if($(this).hasClass('active'))
                     {
-                        $(this).removeClass('active');
                         $(this).addClass('active');
                     }
                     else
-                        {
-                            $(this).addClass('active');
-                            $(this).removeClass('active');
-                        }
+                    {
+                        $('.nav-link').removeClass('active');
+                        $(this).addClass('active');
+                    }
+                });
+                $('.navbar-brand').click(function(){
+                    $('.nav-link').removeClass('active');
+                })
+            });
+            $(document).ready(function(){
+                $(document).on('click','.js-scroll-trigger',function(){
+                    var target = $(this).attr('href');
+                    var headerHeight = $('.navbar').outerHeight();
+                    
+                    $('html').animate({scrollTop:$(target).offset().top - headerHeight}, 500);
+                    
+                    return false;
+                });
+            });
+            // $(document).ready(function(){
+            //     $('nav .container .navbar-toggler').click(function(){
+            //         $('.navbar-collapse .navbar-nav').slideDown();
+            //     })
+            //     $('.nav-link').click(function(){
+            //         $('nav .navbar-collapse .navbar-nav').slideUp();
+            //     })
+            // });
 
-            });
-            });
+            
+
 
     </script>
 </html>
-
 
 body{
     background-color: #1abc9c;
 }
 .active{
     color: #fff;
-    background: #1abc9c;
+    background-color: #1abc9c;
 }
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-control-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7px 0 0 13px;
+    transition: all 200ms;
+    opacity: 0;
+  }
+  
+  .form-control:focus + .form-control-placeholder{
+    font-size: 75%;
+    transform: translate3d(0, -100%, 0);
+    opacity: 1;
+    color: #1abc9c;
+  }
 html{
     scroll-behavior: smooth;
 }
@@ -359,4 +403,28 @@ body nav + .container{
 }
 .fa-star{
     font-size: 30px;
+}
+.show-nav{
+    display: block !important;
+    transition-duration: 0.9s;
+}
+/* @media screen and (min-width:871px){
+.navbar-collapse{
+    display: flex !important;
+    flex-basis: auto;
+} */
+
+/* @media screen and (max-width:870px){
+   
+    nav .btn{
+        display: block !important;
+    }
+    .navbar .btn + .navbar-nav{
+        display: none !important;    
+    }
+    footer .container .row{
+        max-width: 100%;
+        margin: auto;
+    } */
+
 }
