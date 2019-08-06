@@ -1,1 +1,135 @@
 http://stylus-lang.com/try.html
+
+
+//header.html
+
+<div class="container-fluid px-0">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Akrivia <span class="text-color"> HCM </span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Switch
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" [routerLink]="['/']">H.R</a>                
+                <a class="dropdown-item" [routerLink]="['/']">F.M</a>
+                <a class="dropdown-item" [routerLink]="['/']">User</a>
+                <!-- <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a> -->
+              </div>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+      </nav>
+</div>
+
+//haeder.styl
+
+
+.navbar
+    color white
+    background #30659e
+    .navbar-brand
+        font-size 30px
+        color white
+        span
+            color #ffc107
+.navbar-nav
+    .nav-item
+        .nav-link
+            color white !important
+            
+            
+ //sidebar.html
+ <div class="sidebar">
+    <ul class="sidebar-menu">
+        <li class="sidebar-menu-item">
+            <a class="sidebar-menu-item-link">Dashboard</a>
+        </li>
+        <li class="sidebar-menu-item">
+            <a class="sidebar-menu-item-link">Employee Management</a>
+        </li>
+        <li class="sidebar-menu-item">
+            <a class="sidebar-menu-item-link">Time & Attendance</a>
+        </li>
+        <li class="sidebar-menu-item">
+            <a class="sidebar-menu-item-link">Leave System</a>
+        </li>
+        <li class="sidebar-menu-item">
+            <a class="sidebar-menu-item-link">Off Boarding</a>
+        </li>
+        <li class="sidebar-menu-item">
+            <a class="sidebar-menu-item-link">Holiday Calendar</a>
+        </li>
+        <li class="sidebar-menu-item">
+                <a class="sidebar-menu-item-link">HR Assistant</a>
+            </li>
+            <li class="sidebar-menu-item">
+                    <a class="sidebar-menu-item-link">Visitor Management</a>
+                </li>
+                <li class="sidebar-menu-item">
+                        <a class="sidebar-menu-item-link">Recruitment</a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-item-link">Appraisal</a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-item-link">Approvals</a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-item-link">Training Management</a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                        <a class="sidebar-menu-item-link">Assets</a>
+                                    </li>
+                                    <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-item-link">Assets</a>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                                <a class="sidebar-menu-item-link">Assets</a>
+                                            </li>
+    </ul>
+</div>
+
+
+//sidebar.styl
+
+
+.sidebar
+    position fixed
+    width 230px
+    height 100%
+    border-right 1px solid grey
+    box-shadow 1px 2px 2px grey
+    overflow auto
+    .sidebar-menu
+        list-style none
+        padding 0px
+        margin 0px
+        .sidebar-menu-item
+            &-link
+                display block
+                padding 10px
+                color #797978
+                margin-left 5px
+                cursor pointer
+           
