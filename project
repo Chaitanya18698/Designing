@@ -1,10 +1,147 @@
-http://stylus-lang.com/try.html
+//dashboard.html//
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<div class="container py-2 w-100">
+    <div class="row">
+        <div class="  col-lg-4 col-md-9 col-sm-9">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">EMPLOYEE GRAPH</h4>
+                <!-- <p class="card-text"></p> -->
+                <div class="icon">
+                <i class="fas fa-chart-line fa-lg"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-9 col-sm-9">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">TOTAL HOURS</h4>
+                    <!-- <p class="card-text"></p> -->
+                    <div class="icon">
+                    <i class="fas fa-hourglass-start fa-lg"></i>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-9 col-sm-9">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">GROWTH ESTIMATED</h4>
+                        <!-- <p class="card-text"></p> -->
+                        <div class="icon">
+                        <i class="fas fa-layer-group"></i>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+                <div class="row pt-2">
+                    <div class="col-lg-12 col-md-9 col-sm-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">EMPLOYEE'S WORK ANALYSIS</h4>
+                                <p class="card-text"></p>
+                            <!-- <img class="card-img-top" src="holder.js/100px180/" alt=""> -->
+                            <!-- <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div> -->
+                            <chart [options]="options" 
+             (load)="saveInstance($event.context)">
+      </chart>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+</div>
 
 
-//header.html
+//sidebar.html//
 
-<div class="container-fluid px-0">
-    <nav class="navbar navbar-expand-lg navbar-light">
+<div class="sidebar position-fixed pb-5">
+    <ul class="sidebar-menu">
+        <li class="sidebar-menu-item">
+            <a class="sidebar-menu-item-link" [routerLink]="['/dashboard']">
+                <span class="icon"> <i class="fas fa-tachometer-alt"></i></span>
+                Dashboard</a>
+        </li>
+        <li class="sidebar-menu-item">
+            <a class="sidebar-menu-item-link">
+                <span class="icon"> <i class="fas fa-users"></i></span>
+                Employee Management</a>
+        </li>
+        <li class="sidebar-menu-item">
+            <a class="sidebar-menu-item-link">
+                <span class="icon"> <i class="fas fa-history"></i></span>
+                Time Management</a>
+        </li>
+        <li class="sidebar-menu-item">
+            <a class="sidebar-menu-item-link">
+                <span class="icon"> <i class="fas fa-clock"></i></span>
+                Time & Attendance</a>
+        </li>
+        <li class="sidebar-menu-item">
+            <a class="sidebar-menu-item-link">
+                <span class="icon"> <i class="fas fa-calendar-alt"></i></span>
+                Leave System</a>
+        </li>
+        <li class="sidebar-menu-item">
+            <a class="sidebar-menu-item-link">
+                <span class="icon"> <i class="fas fa-sign-out-alt"></i></span>
+                Off Boarding</a>
+        </li>
+        <li class="sidebar-menu-item">
+            <a class="sidebar-menu-item-link">
+                <span class="icon"> <i class="fas fa-calendar-check"></i></span>
+                Holiday Calendar</a>
+        </li>
+        <li class="sidebar-menu-item">
+                <a class="sidebar-menu-item-link">
+                    <span class="icon"> <i class="fas fa-tty"></i></span>
+                    HR Assistant</a>
+            </li>
+            <li class="sidebar-menu-item">
+                    <a class="sidebar-menu-item-link">
+                        <span class="icon"> <i class="fas fa-user-tie"></i></span>
+                        Visitor Management</a>
+                </li>
+                <li class="sidebar-menu-item">
+                        <a class="sidebar-menu-item-link">
+                        <span class="icon"> <i class="fas fa-certificate"></i></span>
+                            Recruitment</a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-item-link">
+                                    <span class="icon"> <i class="fas fa-chart-line"></i></span>
+                                Appraisal</a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-item-link">
+                                        <span class="icon"> <i class="fas fa-clipboard"></i></span>
+                                    Approvals</a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-item-link">
+                                            <span class="icon"> <i class="fas fa-chalkboard-teacher"></i></span>
+                                        Training Management</a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                        <a class="sidebar-menu-item-link">
+                                                <span class="icon"> <i class="fas fa-laptop"></i></span>
+                                            Assets</a>
+                                    </li>
+                                    <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-item-link">
+                                                    <span class="icon"> <i class="fas fa-cogs"></i></span>
+                                                Customer Report Generator</a>
+                                        </li>
+    </ul>
+</div>
+
+
+//header.html//
+
+<div class="header-wrapper">
+    <nav class="navbar navbar-fixed-top navbar-expand-lg w-100">
         <a class="navbar-brand" href="#">Akrivia <span class="text-color"> HCM </span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -19,16 +156,17 @@ http://stylus-lang.com/try.html
               <a class="nav-link" href="#">Link</a>
             </li> -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Switch
+              <a class="nav-link" [routerLink]="['/login']" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Login
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" [routerLink]="['/']">H.R</a>                
                 <a class="dropdown-item" [routerLink]="['/']">F.M</a>
                 <a class="dropdown-item" [routerLink]="['/']">User</a>
-                <!-- <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a> -->
-              </div>
+                <a class="dropdown-item" [routerLink]="['/login']">Log In</a> 
+               <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div> -->
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -42,85 +180,98 @@ http://stylus-lang.com/try.html
       </nav>
 </div>
 
-//haeder.styl
 
 
+//login.html//
+
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<div class="container">
+    <div class="form-card">
+        <form>
+                <div class="form-group py-2">
+                  <label for="exampleInputEmail1">User Name</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Login In</button>
+              </form>
+    </div>
+</div>
+
+
+//dash.styl//
+.container
+    margin-right 230px
+    margin-left 230px
+    max-width 960px
+    .row
+        .card
+            .card-body
+                .icon
+                    font-size 30px
+                    
+                    
+//header.dtyl//
+
+.header-wrapper
+    min-height 65px
 .navbar
-    color white
-    background #30659e
+    background #093a6d
+    padding .3rem 1rem
+    position fixed
+    z-index 1040
     .navbar-brand
         font-size 30px
         color white
         span
-            color #ffc107
+            color #a7ff00
 .navbar-nav
     .nav-item
         .nav-link
             color white !important
-            
-            
- //sidebar.html
- <div class="sidebar">
-    <ul class="sidebar-menu">
-        <li class="sidebar-menu-item">
-            <a class="sidebar-menu-item-link">Dashboard</a>
-        </li>
-        <li class="sidebar-menu-item">
-            <a class="sidebar-menu-item-link">Employee Management</a>
-        </li>
-        <li class="sidebar-menu-item">
-            <a class="sidebar-menu-item-link">Time & Attendance</a>
-        </li>
-        <li class="sidebar-menu-item">
-            <a class="sidebar-menu-item-link">Leave System</a>
-        </li>
-        <li class="sidebar-menu-item">
-            <a class="sidebar-menu-item-link">Off Boarding</a>
-        </li>
-        <li class="sidebar-menu-item">
-            <a class="sidebar-menu-item-link">Holiday Calendar</a>
-        </li>
-        <li class="sidebar-menu-item">
-                <a class="sidebar-menu-item-link">HR Assistant</a>
-            </li>
-            <li class="sidebar-menu-item">
-                    <a class="sidebar-menu-item-link">Visitor Management</a>
-                </li>
-                <li class="sidebar-menu-item">
-                        <a class="sidebar-menu-item-link">Recruitment</a>
-                    </li>
-                    <li class="sidebar-menu-item">
-                            <a class="sidebar-menu-item-link">Appraisal</a>
-                        </li>
-                        <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-item-link">Approvals</a>
-                            </li>
-                            <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-item-link">Training Management</a>
-                                </li>
-                                <li class="sidebar-menu-item">
-                                        <a class="sidebar-menu-item-link">Assets</a>
-                                    </li>
-                                    <li class="sidebar-menu-item">
-                                            <a class="sidebar-menu-item-link">Assets</a>
-                                        </li>
-                                        <li class="sidebar-menu-item">
-                                                <a class="sidebar-menu-item-link">Assets</a>
-                                            </li>
-    </ul>
-</div>
 
 
-//sidebar.styl
 
 
-.sidebar
-    position fixed
+           //login.styl//
+           
+           .container
+    margin-right 230px
+    margin-left 230px
+    max-width 960px
+    padding-top 5rem
+    .form-card
+        max-width 40%
+        background whitesmoke
+        width 100%
+        margin auto
+        display flex
+        justify-content center
+        align-items center
+        border-radius 3px
+        form
+            .form-group
+                .form-control
+                    width auto
+                    
+                    //sidebar.styl//
+                    .sidebar
     width 230px
     height 100%
+    z-index 1040
     border-right 1px solid grey
     box-shadow 1px 2px 2px grey
     overflow auto
+    background-color whitesmoke
     .sidebar-menu
         list-style none
         padding 0px
@@ -132,4 +283,22 @@ http://stylus-lang.com/try.html
                 color #797978
                 margin-left 5px
                 cursor pointer
-           
+                .icon
+                    color #093a6d
+.sidebar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.sidebar::-webkit-scrollbar
+{
+	width: 4px;
+	background-color: #F5F5F5;
+}
+
+.sidebar::-webkit-scrollbar-thumb
+{
+	background-color: #093a6d;
+    border-radius 6px
+}
