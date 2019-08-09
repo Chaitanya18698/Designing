@@ -1,12 +1,16 @@
 //dashboard.html//
 <app-header></app-header>
 <app-sidebar></app-sidebar>
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<app-sidebar-right></app-sidebar-right>
+<!-- <app-sidebar-right></app-sidebar-right> -->
 <div class="container py-2 w-100">
     <div class="row">
-        <div class="  col-lg-4 col-md-9 col-sm-9">
+        <div class="col-lg-4 col-md-9 col-sm-9">
             <div class="card">
               <div class="card-body">
-                <h4 class="card-title">EMPLOYEE GRAPH</h4>
+                <h4 class="card-title">Employee Graph</h4>
                 <!-- <p class="card-text"></p> -->
                 <div class="icon">
                 <i class="fas fa-chart-line fa-lg"></i>
@@ -17,18 +21,18 @@
         <div class="col-lg-4 col-md-9 col-sm-9">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">TOTAL HOURS</h4>
+                    <h4 class="card-title">Total Hours</h4>
                     <!-- <p class="card-text"></p> -->
                     <div class="icon">
                     <i class="fas fa-hourglass-start fa-lg"></i>
                     </div>
                   </div>
-                </div>
+                </div> 
             </div>
             <div class="col-lg-4 col-md-9 col-sm-9">
                     <div class="card">
                       <div class="card-body">
-                        <h4 class="card-title">GROWTH ESTIMATED</h4>
+                        <h4 class="card-title">Growth Estimated</h4>
                         <!-- <p class="card-text"></p> -->
                         <div class="icon">
                         <i class="fas fa-layer-group"></i>
@@ -41,7 +45,7 @@
                     <div class="col-lg-12 col-md-9 col-sm-9">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">EMPLOYEE'S WORK ANALYSIS</h4>
+                                <h4 class="card-title">Employee's Work Analysis</h4>
                                 <p class="card-text"></p>
                             <!-- <img class="card-img-top" src="holder.js/100px180/" alt=""> -->
                             <!-- <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div> -->
@@ -53,6 +57,7 @@
                     </div>
                 </div>
 </div>
+<app-footer></app-footer>
 
 
 //sidebar.html//
@@ -65,72 +70,72 @@
                 Dashboard</a>
         </li>
         <li class="sidebar-menu-item">
-            <a class="sidebar-menu-item-link">
+            <a class="sidebar-menu-item-link" [routerLink]="['/employee-management']">
                 <span class="icon"> <i class="fas fa-users"></i></span>
                 Employee Management</a>
         </li>
         <li class="sidebar-menu-item">
-            <a class="sidebar-menu-item-link">
+            <a class="sidebar-menu-item-link" [routerLink]="['/routePath']">
                 <span class="icon"> <i class="fas fa-history"></i></span>
                 Time Management</a>
         </li>
         <li class="sidebar-menu-item">
-            <a class="sidebar-menu-item-link">
+            <a class="sidebar-menu-item-link" [routerLink]="['/routePath']">
                 <span class="icon"> <i class="fas fa-clock"></i></span>
                 Time & Attendance</a>
         </li>
         <li class="sidebar-menu-item">
-            <a class="sidebar-menu-item-link">
+            <a class="sidebar-menu-item-link" [routerLink]="['/routePath']">
                 <span class="icon"> <i class="fas fa-calendar-alt"></i></span>
                 Leave System</a>
         </li>
         <li class="sidebar-menu-item">
-            <a class="sidebar-menu-item-link">
+            <a class="sidebar-menu-item-link" [routerLink]="['/routePath']">
                 <span class="icon"> <i class="fas fa-sign-out-alt"></i></span>
                 Off Boarding</a>
         </li>
         <li class="sidebar-menu-item">
-            <a class="sidebar-menu-item-link">
+            <a class="sidebar-menu-item-link" [routerLink]="['/routePath']">
                 <span class="icon"> <i class="fas fa-calendar-check"></i></span>
                 Holiday Calendar</a>
         </li>
         <li class="sidebar-menu-item">
-                <a class="sidebar-menu-item-link">
+                <a class="sidebar-menu-item-link" [routerLink]="['/routePath']">
                     <span class="icon"> <i class="fas fa-tty"></i></span>
                     HR Assistant</a>
             </li>
             <li class="sidebar-menu-item">
-                    <a class="sidebar-menu-item-link">
+                    <a class="sidebar-menu-item-link" [routerLink]="['/routePath']">
                         <span class="icon"> <i class="fas fa-user-tie"></i></span>
                         Visitor Management</a>
                 </li>
                 <li class="sidebar-menu-item">
-                        <a class="sidebar-menu-item-link">
+                        <a class="sidebar-menu-item-link" [routerLink]="['/routePath']">
                         <span class="icon"> <i class="fas fa-certificate"></i></span>
                             Recruitment</a>
                     </li>
                     <li class="sidebar-menu-item">
-                            <a class="sidebar-menu-item-link">
+                            <a class="sidebar-menu-item-link" [routerLink]="['/routePath']">
                                     <span class="icon"> <i class="fas fa-chart-line"></i></span>
                                 Appraisal</a>
                         </li>
                         <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-item-link">
+                                <a class="sidebar-menu-item-link" [routerLink]="['/routePath']">
                                         <span class="icon"> <i class="fas fa-clipboard"></i></span>
                                     Approvals</a>
                             </li>
                             <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-item-link">
+                                    <a class="sidebar-menu-item-link" [routerLink]="['/routePath']">
                                             <span class="icon"> <i class="fas fa-chalkboard-teacher"></i></span>
                                         Training Management</a>
                                 </li>
                                 <li class="sidebar-menu-item">
-                                        <a class="sidebar-menu-item-link">
+                                        <a class="sidebar-menu-item-link" [routerLink]="['/routePath']">
                                                 <span class="icon"> <i class="fas fa-laptop"></i></span>
                                             Assets</a>
                                     </li>
                                     <li class="sidebar-menu-item">
-                                            <a class="sidebar-menu-item-link">
+                                            <a class="sidebar-menu-item-link" [routerLink]="['/routePath']">
                                                     <span class="icon"> <i class="fas fa-cogs"></i></span>
                                                 Customer Report Generator</a>
                                         </li>
@@ -144,7 +149,7 @@
     <nav class="navbar navbar-fixed-top navbar-expand-lg w-100">
         <a class="navbar-brand" href="#">Akrivia <span class="text-color"> HCM </span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"> <i class="fas fa-bar"></i> </span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -155,6 +160,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
             </li> -->
+            <li class="nav-item">
+              <a class="nav-link">
+                <i class="fas fa-cog"></i>
+              </a>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link" [routerLink]="['/login']" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Login
@@ -179,6 +189,14 @@
         </div>
       </nav>
 </div>
+<!-- <script>
+  $(document).ready(function(){
+    $('.navbar-nav .nav-item .nav-link i').mouseenter(function(){
+      $(this).css({'cursor':'pointer','transform':'rotate(180deg)','transition':'0.3s all ease'})
+    })
+  })
+</script> -->
+
 
 
 
@@ -186,24 +204,88 @@
 
 <app-header></app-header>
 <app-sidebar></app-sidebar>
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<app-sidebar-right></app-sidebar-right>
+<div class="wrapper">
 <div class="container">
     <div class="form-card">
         <form>
-                <div class="form-group py-2">
-                  <label for="exampleInputEmail1">User Name</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        <!-- <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+                <div class="form-group py-2" formGroupName="personalData" novalidate>
+                  <label for="exampleInputEmail1">Username</label>
+                  <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                   <small id="emailHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
                 </div>
-                <div class="form-group">
+                <div class="form-group" formGroupName="personalData" novalidate>
                   <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <input formControlName="mobile" type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
-                </div>
-                <button type="submit" class="btn btn-primary mb-2">Login In</button>
-              </form>
+                <div class="form-group form-check" formGroupName="personalData" novalidate>
+                  <label for="">Select your country</label>  
+                  <select formControlName="country"  multiple class="form-control" id="exampleFormControlSelect2">
+                      <option *ngFor="let country of countries" [value]="country">{{country}}</option>
+                    </select>
+                  <label class="form-check-label" for="exampleCheck1">Keep me signed in</label> -->
+                <!-- </div>
+                <select formControlName="requestType"  multiple class="form-control" id="exampleFormControlSelect2">
+                  <option *ngFor="let requestType of requestTypes" [value]="requestType">{{requestType}}</option>
+                </select>
+                <input formControlName="text" class="form-control">
+                <button type="submit" [disabled]="contactForm.pristine"  class="btn btn-primary mb-2">Save</button>
+                <button type="reset" (click)="revert()" [disabled]="contactForm.pristine" class="btn btn-primary mb-2">
+                    Revert
+                  </button>
+              </form> -->
+    </div>
+</div>
+</div>
+<app-footer></app-footer>
+
+
+//sidebar-right.html//
+
+<div class="wrapper-right">
+    <div class="sidebar-right pb-5">
+        <div class="card">
+          <img class="card-img-top" src="holder.js/100px180/" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Mark your holidays</h4>
+            <!-- <form>
+                   ? <my-date-picker name="ngModelDate" [options]="myDatePickerOptions" [selector]="selector"  required></my-date-picker>
+            <p class="card-text">Try Date Picker here</p>
+            </form> -->
+        </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="holder.js/100px180/" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Company Updates</h4>
+                <p class="card-text">Try Full calendar here</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="holder.js/100px180/" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Employee Birthdays</h4>
+                <p class="card-text">Details</p>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -212,20 +294,27 @@
 .container
     margin-right 230px
     margin-left 230px
-    max-width 960px
+    max-width 890px
     .row
         .card
+            box-shadow 1px 2px 4px whitesmoke
             .card-body
+                .card-title
+                    font-size 20px
+                    color #004085
                 .icon
                     font-size 30px
-                    
+                    color #007bff9e
+
+body
+    background whitesmoke
                     
 //header.dtyl//
 
 .header-wrapper
     min-height 65px
 .navbar
-    background #093a6d
+    background #3a628c
     padding .3rem 1rem
     position fixed
     z-index 1040
@@ -234,44 +323,73 @@
         color white
         span
             color #a7ff00
+    button
+        .navbar-toggler-icon
+            color white
+
 .navbar-nav
     .nav-item
         .nav-link
             color white !important
-
-
+            i:hover
+                transform rotate(180deg)
+                transition all 0.8s ease
+                transform-origin 50% 50%
+                cursor pointer                
 
 
            //login.styl//
            
-           .container
-    margin-right 230px
-    margin-left 230px
-    max-width 960px
-    padding-top 5rem
-    .form-card
-        max-width 40%
-        background whitesmoke
-        width 100%
-        margin auto
-        display flex
-        justify-content center
-        align-items center
-        border-radius 3px
-        form
-            .form-group
-                .form-control
-                    width auto
+           .wrapper
+    min-height calc(100vh - 102.59px)    
+    .container
+        margin-right 230px
+        margin-left 230px
+        max-width 960px
+        padding-top 3rem
+        // height calc(500px - 35px)
+        .form-card
+            max-width 40%
+            background white
+            width 100%
+            margin auto
+            display flex
+            justify-content center
+            align-items center
+            border-radius 10px
+            form
+                .form-group
+                    .form-control
+                        width auto
+			
+			//sidebar-right//
+			.wrapper-right
+    display block
+    position absolute
+    right 0px
+    width 230px
+    .sidebar-right
+        .card
+            .card-body
+                .card-title
+                    font-size 20px
+                    color #004085
+                .card-text
+                    font-size 14px
+
+			
+			
+			
                     
                     //sidebar.styl//
-                    .sidebar
+.sidebar
     width 230px
     height 100%
-    z-index 1040
     border-right 1px solid grey
     box-shadow 1px 2px 2px grey
     overflow auto
     background-color whitesmoke
+    z-index 1040
     .sidebar-menu
         list-style none
         padding 0px
@@ -281,24 +399,57 @@
                 display block
                 padding 10px
                 color #797978
-                margin-left 5px
                 cursor pointer
+                border-left 4px solid transparent
                 .icon
-                    color #093a6d
-.sidebar::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
+                    color #4671a7
+                &:hover
+                    text-decoration none
+                    background white
+                    border-left-color #4671a7
+
+.sidebar
+  &::-webkit-scrollbar-track
+    -webkit-box-shadow inset 0 0 1px rgba(0,0,0,0.3)
+    background-color #F5F5F5
+  &::-webkit-scrollbar
+    width 2px
+    background-color #F5F5F5
+  &::-webkit-scrollbar-thumb
+    background-color #9cbbe2
 }
 
-.sidebar::-webkit-scrollbar
-{
-	width: 4px;
-	background-color: #F5F5F5;
-}
 
-.sidebar::-webkit-scrollbar-thumb
-{
-	background-color: #093a6d;
-    border-radius 6px
-}
+
+//all.styl//
+
+
+//header//
+@import 'header.styl'
+
+
+//sidebar//
+@import 'sidebar.styl'
+
+
+//dashboard//
+@import 'dashboard.styl'
+
+
+//login//
+
+@import 'login.styl'
+
+
+//footer//
+
+@import 'footer.styl'
+
+//sidebar-right//
+
+@import 'sidebar-right.styl'
+
+
+//employee-management//
+
+@import 'employee-management.styl'
