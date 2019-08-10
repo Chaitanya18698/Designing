@@ -453,3 +453,215 @@ body
 //employee-management//
 
 @import 'employee-management.styl'
+
+
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<div class="wrapper-emp">
+  <div class="container p-3 mr-0">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h4 class="card-title">Favourites</h4>
+            <ul class="card-menu">
+              <li class="card-list-item"> <a class="card-link" [routerLink]="['/']"> <i class="fas fa-user-plus"></i> Add New Employee</a> </li>
+              <li class="card-list-item"> <a class="card-link" [routerLink]="['/']"> <i class="fas fa-newspaper"></i> New Newsletter</a> </li>
+              <li class="card-list-item"> <a class="card-link" [routerLink]="['/']"> <i class="fas fa-bullhorn"></i> New Notice</a> </li>
+              <li class="card-list-item"> <a class="card-link" [routerLink]="['/']"> <i class="fas fa-user-edit"></i> Profile Approve requests</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="row">
+          <div class="col-md-4 px-1 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-icons">
+                  <i class="fas fa-user-edit"></i>
+                </div>
+                <div class="card-icon-info">
+                  <div class="card-info-head">0</div>
+                  <p>Profile</p>
+                  <p>approve requests</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 px-1 mb-3">
+            <div class="card">
+              <img class="card-img-top" src="holder.js/100px180/" alt="">
+              <div class="card-body">
+                <div class="card-icons">
+                  <i class="fas fa-user-times"></i>
+                </div>
+                <div class="card-icon-info">
+                  <p class="card-info-head">0</p>
+                  <p>Profile</p>
+                  <p>approve requests</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 px-1 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-icons">
+                  <i class="fas fa-user-plus"></i>
+                </div>
+                <div class="card-icon-info">
+                  <p class="card-info-head">0</p>
+                  <p>Profile</p>
+                  <p>approve requests</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 px-1 mb-3">
+            <div class="card">
+              <img class="card-img-top" src="holder.js/100px180/" alt="">
+              <div class="card-body">
+                <div class="card-icons">
+                  <i class="far fa-file"></i>
+                </div>
+                <div class="card-icon-info">
+                  <p class="card-info-head">0</p>
+                  <p>Profile</p>
+                  <p>approve requests</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 px-1">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-icons">
+                  <i class="far fa-calendar-check"></i>
+                </div>
+                <div class="card-icon-info">
+                  <p class="card-info-head">0</p>
+                  <p>Profile</p>
+                  <p>approve requests</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon"> <i class="far fa-user-circle"></i> 
+            <span class="card-title">Celebrations</span>
+            <div class="card-button"> <i class="fas fa-chevron-right"></i> </div>
+          </div>
+          <div class="card-body">
+            <div class="card-list-info">
+              <div class="card-list-date"></div>
+              <div class="card-profile-icon"></div>
+              <div class="card-profile-details">
+                <p class="card-profile-name"></p>
+                <p class="card-profile-desig"></p>
+                <i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 px-1">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <chart [options]="options" >
+              </chart>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+     
+      </div>
+    </div>
+  </div>
+  
+  //STYL//
+  .wrapper-emp
+    .container
+        width auto
+        max-width 1140px
+        .row
+            .col-md-5
+                .card
+                    min-height 200px
+                    .card-body
+                        .card-title
+                            color #6c757d
+                            font-size 24px
+                        .card-menu
+                            list-style none
+                            margin 0px
+                            padding 0px
+                            .card-list-item
+                                padding-bottom 10px
+                                .card-link
+                                    color #1564b9
+                                    font-size 14px
+                                    i
+                                        padding-right 4px
+        .row
+            .col-md-7
+                .row
+                    .col-md-4
+                        .card
+                            min-height 100px
+                            .card-body
+                                padding 15px
+                                display flex
+                                .card-icons
+                                    font-size 30px
+                                    color #1564b9
+                                .card-icon-info
+                                    font-size 12px
+                                    margin-left 30px
+                                    .card-info-head
+                                        font-size 20px
+                                    p
+                                        margin 0px
+
+.row
+    .col-md-5
+        .card
+            .card-header
+                background white
+                .card-icon
+                    font-size 24px
+                    float left
+                .card-button
+                    position absolute
+                    right 10px
+                    border 1px solid black
+                    border-radius 50%
+                    width 20px
+                    height 20px
+                    font-size 13px
+                    text-align center
+                    line-height 17px
+                        
+
+
+
+
+.card
+    box-shadow 1px 2px 4px #565555
+.card:hover
+    cursor pointer
+
+
+                    
+                    
+
