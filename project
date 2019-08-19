@@ -647,6 +647,358 @@ body
 </div>
 <app-footer></app-footer>
 
+//form.html//
+
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<app-top-nav></app-top-nav>
+<div class="wrapper-add-employee">
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+  <div class="card-header bg-white">
+  <h6 class="card-title"> <i class="fas fa-user"></i> Add Employee Details</h6>
+  </div>
+  <div class="card-body">
+    <form action="">
+        <div class="form-steps">
+            <ul class="form-steps-nav d-flex">
+                <li class="steps">
+                    <a>
+                    <span class="num">1</span>
+                        Personal Details
+                    </a>
+                </li>
+                <li class="steps"><a>
+                    <span class="num">2</span>
+                        Personal Details
+                    </a></li>
+                <li class="steps">
+                    <a>
+                    <span class="num">3</span>
+                        Personal Details
+                    </a>
+                </li>
+                <li class="steps">
+                    <a>
+                    <span class="num">4</span>
+                        Personal Details
+                    </a>
+                </li>
+                <li class="steps">
+                    <a>
+                    <span class="num">5</span>
+                        Personal Details
+                    </a>
+                </li>
+                <li class="steps">
+                    <a>
+                    <span class="num">6</span>
+                        Personal Details
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="form-steps-content">
+            <div class="form-step">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <label for="" class="control-label field-required">Salutation</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">Select Salutation</option>
+                            <option value="">Dr.</option>
+                            <option value="">Mr.</option>
+                            <option value="">Mrs.</option>
+                            <option value="">Ms.</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <label for="" class="control-label field-required">First Name</label>
+                        <input type="text" class="form-control" placeholder="Enter First Name..">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <label for="" class="control-label field-required">Middle Name</label>
+                        <input type="text" class="form-control" placeholder="Enter Middle Name..">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <label for="" class="control-label field-required">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Enter Last Name..">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <label for="" class="control-label field-required">Date of Birth</label>
+                        <input type="text" class="form-control" placeholder="Select Date of Birth..">
+
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <label for="" class="control-label field-required">Gender</label><br>
+                        <input type="radio" class="pr-2"><small>Male</small>
+                        <input type="radio" class="ml-3"><small>Female</small>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <label for="" class="control-label field-required">Blood Group</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">Select Blood Group</option>
+                            <option value="">A+</option>
+                            <option value="">A-</option>
+                            <option value="">B+</option>
+                            <option value="">AB+</option>
+                            <option value="">AB-</option>
+                            <option value="">O+</option>
+                            <option value="">O-</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <label for="" class="control-label field-required">Marital Status</label><br>
+                        <input type="radio" class="pr-2"><small>Married</small>
+                        <input type="radio" class="ml-3"><small>Single</small>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <label for="" class="control-label field-required">Personal Email</label>
+                        <input class="form-control" placeholder="Enter Personal Email..">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <label for="" class="control-label field-required">Phone</label>
+                        <input type="text" placeholder="Phone Number" class="form-control">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <label for="" class="control-label field-required">Religion</label>
+                        <select name="" id="" class="form-control" >
+                            <option value="">Select Religion</option>
+                            <option value="">Dr.</option>
+                            <option value="">Mr.</option>
+                            <option value="">Mrs.</option>
+                            <option value="">Ms.</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <label for="" class="control-label field-required">Nationality</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">Select Nationality</option>
+                            <option value="">Dr.</option>
+                            <option value="">Mr.</option>
+                            <option value="">Mrs.</option>
+                            <option value="">Ms.</option>
+                        </select>
+                    </div>
+                    <!-- <div class="col-md-3 col-sm-6">
+                        <label for="" class="control-label field-required">Salutation</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">Select Salutation</option>
+                            <option value="">Dr.</option>
+                            <option value="">Mr.</option>
+                            <option value="">Mrs.</option>
+                            <option value="">Ms.</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <label for="" class="control-label field-required">Salutation</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">Select Salutation</option>
+                            <option value="">Dr.</option>
+                            <option value="">Mr.</option>
+                            <option value="">Mrs.</option>
+                            <option value="">Ms.</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <label for="" class="control-label field-required">Salutation</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">Select Salutation</option>
+                            <option value="">Dr.</option>
+                            <option value="">Mr.</option>
+                            <option value="">Mrs.</option>
+                            <option value="">Ms.</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <label for="" class="control-label field-required">Salutation</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">Select Salutation</option>
+                            <option value="">Dr.</option>
+                            <option value="">Mr.</option>
+                            <option value="">Mrs.</option>
+                            <option value="">Ms.</option>
+                        </select>
+                    </div> -->
+                   
+                    </div>
+                    
+                    <div class="row border-top mt-4 pt-4">
+                        <div class="col-12"><h5>Emergency Contact Details</h5></div>
+                        <div class="col-md-3 col-sm-6">
+                            <label for="" class="control-label field-required">Name</label>
+                            <input type="text" placeholder="Enter Name.." class="form-control">
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label for="" class="control-label field-required">Relation</label>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select</option>
+                                <option value="">Father</option>
+                                <option value="">Mother</option>
+                                <option value="">Gaurdian</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label for="" class="control-label field-required">Contact Number</label>
+                            <input type="text" placeholder="Enter Contact No." class="form-control">
+                        </div>
+                    </div>
+                    <div class="row border-top mt-4 pt-4">
+                            <div class="col-12"><h5>Family Details</h5></div>
+                            <div class="col-md-3 col-sm-6">
+                                <label for="" class="control-label field-required">Father</label>
+                                <input type="text" placeholder="Enter Father Name.." class="form-control">
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <label for="" class="control-label field-required">Mother</label>
+                                <input type="text" placeholder="Enter Mother Name.." class="form-control">
+                            </div>
+                        </div>
+                        <div class="row border-top mt-4 pt-4">
+                        <div class="col-12"><h5>Address Details</h5></div>
+                        <div class="col-md-3 col-sm-6">
+                            <label for="" class="control-label field-required">Residential No.</label>
+                            <input type="text" placeholder="Enter Residential No.." class="form-control">
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label for="" class="control-label field-required">Address Line 1</label>
+                            <input type="text" placeholder="Enter Address Line 1.." class="form-control">
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label for="" class="control-label field-required">Address Line 2</label>
+                            <input type="text" placeholder="Enter Address Line 2.." class="form-control">
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label for="" class="control-label field-required">Locality/Village</label>
+                            <input type="text" placeholder="Enter Locality.." class="form-control">
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label for="" class="control-label field-required">City</label>
+                            <input type="text" placeholder="Enter City.." class="form-control">
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label for="" class="control-label field-required">State</label>
+                            <input type="text" placeholder="Enter State.." class="form-control">
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label for="" class="control-label field-required">Country</label>
+                            <input type="text" placeholder="Enter Country.." class="form-control">
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label for="" class="control-label field-required">Pin Code</label>
+                            <input type="text" placeholder="Enter Pin Code.." class="form-control">
+                        </div>
+                        <div class="col-md-12 text-right pt-2">
+                        <button class="btn" [routerLink]="['/']" routerLinkActive="router-link-active" >Next</button>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+    </form>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<app-footer></app-footer>
+
+
+//form.styl//
+
+
+.wrapper-add-employee
+    .container
+        width auto
+        max-width 1140px
+        margin-right 0px
+        .row
+            .col-md-12
+                .card
+                    .card-header
+                        color #1564b9
+                    .card-body
+                        form
+                            margin-top 20px
+                            color #797978
+                            .form-steps
+                                &-nav
+                                    text-decoration none
+                                    list-style none
+                                    padding 0px
+                                    margin 0px
+                                    .steps
+                                        a
+                                            pointer-events none
+                                            position relative
+                                            display block
+                                            padding-top 20px
+                                            font-weight 400
+                                            color #8e9094
+                                            transition all 0.2s ease-in-out
+                                            .num
+                                                position absolute
+                                                display block
+                                                background #e2e2e2
+                                                color #8e9094
+                                                line-height 23px
+                                                text-align center
+                                                margin-top -57.5px
+                                                left 52%
+                                                margin-left -17.5px
+                                                width 25px
+                                                height 25px
+                                                top 45px
+                                                -webkit-background-clip padding-box
+                                                -moz-background-clip padding
+                                                background-clip padding-box
+                                                border-radius 50%
+                                                transition all 0.2s ease-in-out
+                                                border 2px solid #e2e2e2
+                                                z-index 1
+                            .form-steps-content
+                                .form-step
+                                    .row
+                                        .col-md-3
+                                            .control-label
+                                                font-size 12px
+                                            .control-label::after
+                                                content '*'
+                                                color red
+                                            .form-control
+                                                font-size 12px
+                                    .row
+                                        .col-12
+                                            h5
+                                                color #1564b9
+                                                font-weight 300
+.row
+    .btn
+         background #1564b9
+         color white
+                                            
+                                                   
+
+
+
   
   //STYL//
  .wrapper-emp
